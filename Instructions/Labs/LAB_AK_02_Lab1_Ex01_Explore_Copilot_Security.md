@@ -60,7 +60,7 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
 1. Select **+ Select members (1)**.
 
-1. Avery Howard is the first name on this list, select the **+** to the right of the name.  Avery Howard (2) is now listed under selected members. Select the **Select (3)** button, then select **Next (4)**.
+1. **Avery Howard** is the first name on this list, select the **+** to the right of the name.  Avery Howard (2) is now listed under selected members. Select the **Select (3)** button, then select **Next (4)**.
 
    ![](../Media/lab2-2.png)
 
@@ -347,8 +347,6 @@ This exercise should take approximately **30** minutes to complete.
 1. From the incident page, select the first alert **Suspicious URL clicked**.
 
 1. Copilot  automatically generates an **Alert summary**, which provides a wealth of information for further analysis. For example, the summary identifies suspicious activity, it identifies data collection activities, credential access, malware, discovery activities, and more.
-
-   ![](../Media/lab2-44.png)
 
 1. There's a lot of information on the page, so to get a better view of this alert, select **Open alert page**. It's on the third panel on the alert page, next to the incident graph and below the alert title.
 
