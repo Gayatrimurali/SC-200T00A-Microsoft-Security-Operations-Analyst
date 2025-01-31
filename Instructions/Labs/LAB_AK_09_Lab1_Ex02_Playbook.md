@@ -6,7 +6,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 With a playbook, you can help automate and orchestrate your threat response, integrate with other systems both internal and external, and can be set to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule, respectively.
 
->**Important:** The lab exercises for Learning Path #9 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+>**Important:** The lab exercises for **Learning Path #9** are in a *standalone* environment. If you exit the lab before completing it, you will need to re-run the configurations upon re-entering.
 
 ## Lab Objectives
   
@@ -25,9 +25,11 @@ After completing this lab, you will be able to:
 
 In this task, you'll create a Logic App that is used as a Playbook in Microsoft Sentinel.
 
-1. In Azure Portal navigate to your Microsoft Sentinel Workspace.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
 
-1. In *Microsoft Sentinel*, navigate to **Content Hub**.
+   ![Picture 1](../Media/sc-200-19.png)
+
+1. In Microsoft Sentinel, navigate to **Content Hub**.
 
 1. Within the search bar, look for **Sentinel SOAR Essentials**.
 
@@ -43,19 +45,15 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
    ![](../Media/4.png)
 
-1. Select the **Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps (1)** template.
-
-1. On the details pane, select **Create playbook (2)**.
+1. Select the **Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps (1)** template. Then, in the details pane, select **Create playbook (2)**.
 
     ![](../Media/7.png)
 
 1. For Resource Group, select **Create New**, enter **RG-playbooks** and select OK.
 
-1. For Playbook name, enter **Defender_XDR_Ransomware_Playbook_SecOps-Tasks (1)** (would exceed limit of 64 characters).
+1. For the **Playbook name**, enter **Defender_XDR_Ransomware_Playbook_SecOps-Tasks (1)** (note that this would exceed the limit of 64 characters). Then, click on Select **Connections (2)**.
 
    ![](../Media/8.png)
-
-1. Select **Connections (2)**.
 
 1. Select **Next: Review and create**.
 
@@ -71,13 +69,15 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
 In this task, you’ll update the new playbook you created with the proper connection information.
 
-1. In the Search bar of the Azure portal, type Sentinel, then select Microsoft Sentinel.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
 
-1. Select your Microsoft Sentinel Workspace.
+   ![Picture 1](../Media/sc-200-19.png)
 
-1. Select Automation under the Configuration area and then select the Active Playbooks tab.
+1. Select your **Microsoft Sentinel Workspace**.
 
-1. Select Refresh from the command bar in case you don’t see any playbooks. You should see the playbook created from the previous step.
+1. Select **Automation** under the **Configuration** area and then select the **Active Playbooks** tab.
+
+1. Select **Refresh** from the command bar in case you don’t see any playbooks. You should see the playbook created from the previous step.
 
 1. Select the **Defender_XDR_Ransomware_Playbook_SecOps_Tasks** playbook name.
 
@@ -89,7 +89,7 @@ In this task, you’ll update the new playbook you created with the proper conne
 
     >**Note:** You may need to refresh the page.
 
-1. Select the first block, Microsoft Sentinel incident.
+1. Select the **first block**, Microsoft Sentinel incident.
 
 1. Select the **Change connection** link.
 
@@ -107,9 +107,9 @@ In this task, you’ll update the new playbook you created with the proper conne
 
     ![](../Media/16.png)
 
-1. The last line of the block should now read “Connected to your-admin-username”.
+1. The last line of the block should now read **Connected to your-admin-username**.
 
-1. Select Save on the command bar. The Logic App will be used in a future lab.
+1. Select **Save** on the command bar. The Logic App will be used in a future lab.
 
     ![](../Media/21.png)
 
@@ -170,8 +170,9 @@ From here, depending on your role, you will either continue doing more architect
 
 ### Review
 In this lab, you have completed the following:
-- You have created a Playbook in Microsoft Sentinel
-- You have updated a Playbook in Microsoft Sentinel
+
+- Created a Playbook in Microsoft Sentinel
+- Updated a Playbook in Microsoft Sentinel
 - Created an Automation Rule
 
-## Select **Next** to continue to Lab 3.
+## Select **Next** to continue to Lab 3

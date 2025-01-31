@@ -6,8 +6,10 @@ The organization you work for wants to increase the efficiency and capabilities 
 
 In this exercise, you go through the *first run experience* of Microsoft Security Copilot to provision Copilot with one security compute unit (SCU).
 
-## Lab objectives
+## Lab Objectives
+
 In this lab, you will perform:
+
 - Task 1: Provision Microsoft Security Copilot
 - Task 2: Explore the Microsoft Security Copilot standalone experience
 - Task 3: Explore the Microsoft Security Copilot embedded experience
@@ -20,9 +22,9 @@ In this lab, you will perform:
 
 ### Task 1: Provision Microsoft Security Copilot
 
-For this exercise, you're logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Security Copilot.
+For this task, you're logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Security Copilot.
 
-This exercise should take approximately **15** minutes to complete.
+This task should take approximately **15** minutes to complete.
 
 In this task, you walk through the process of ensuring you have the appropriate role permissions. This starts by enabling access management for Azure resources.
 
@@ -36,7 +38,7 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
    ![](../Media/lab2-6.png)
 
-   >**Note**: If Access Management for Azure resources is already enabled, proceed to the next step.
+   >**Note**: If **Access Management for Azure resources** is already enabled, proceed to the next step.
 
 1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
 
@@ -112,153 +114,149 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
 The security administrator for your organization provisioned Copilot. Since you're the senior analyst on the team, the administrator added you as a Copilot owner and asked you to familiarize yourself with the solution.
 
-In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Microsoft Security Copilot.
+In this task, you explore all the key landmarks in the landing page of the standalone experience of Microsoft Security Copilot.
 
 You're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Security Copilot.
 
-This exercise should take approximately **15** minutes to complete.
+This task should take approximately **15** minutes to complete.
 
 1. Open a new tab and access the simulated environment by clicking on the following link: : **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Select the **Menu** icon, which is sometimes referred to as the hamburger icon.
 
-1. Select **My sessions** and note the available options.
+1. Select **My sessions** from the left menu and note the available options.
 
    ![](../Media/lab2-14.png)
 
-1. Select recent to view the most recent sessions.
+1. Select **Recent** to view the most recent sessions.
 
-1. Select filter and note the available options, then close the filer.
+1. Select **Filter** and review the available options, then close the filter.
 
-1. Select the home menu icon to open the home menu.
+1. Select the **home menu icon** to open the home menu.
 
-1. Select **Promptbook library**.
+1. Select **Promptbook library** from the left menu.
  
    ![](../Media/lab2-15.png)
 
-1. Select My promptbooks. A subsequent task dives deeper into promptbooks.
+1. Select **My promptbooks** under **Promptbook library**. A subsequent task will provide a deeper dive into promptbooks.
 
    ![](../Media/lab2-16.png)
 
-1. Select Woodgrove.
+1. Select **Woodgrove** under **Promptbook library**.
 
    ![](../Media/lab2-17.png)
 
-1. Select Microsoft.
+1. Select **Microsoft** under **Promptbook library**.
 
    ![](../Media/lab2-18.png)
 
-1. Select filter to view the available options, then select the X to close.
+1. Select **Filter** to view the available options, then select the **X** to close.
 
-1. Select the home menu icon to open the home menu.
+1. Select the **home menu icon** to open the home menu.
 
-1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor does have not access to these menu options.
+1. Select **Owner settings**from the left menu. These settings are available to you as a Copilot owner. A Copilot contributor does have not access to these menu options.
 
    ![](../Media/lab2-19.png)
 
-1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options.
+1. For plugins in **Security Copilot**, select the drop-down under **Who can add and manage their own custom plugins** to view the available options.
 
-1. Select drop-down for Who can add and manage custom plugins for everyone in the organization to view the available options. Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
+1. Select the drop-down for **Who can add and manage custom plugins for everyone in the organization** to view the available options. Note that this option will be greyed out if **Who can add and manage their own custom plugins** is set to **owners only**.
 
    ![](../Media/lab2-21.png)
 
-1. Select the information icon next to "Allow Security Copilot to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You'll work with this setting in a later exercise.
+1. Select the **information icon** next to **"Allow Security Copilot to access data from your Microsoft 365 Services."** This setting must be enabled if you want to use the Microsoft Purview plugin. You'll work with this setting in a later exercise.
 
    ![](../Media/lab2-22.png)
 
-1. Select the drop-down for who can upload files to view the available options.
+1. Select the drop-down for **Who can upload files** to view the available options.
 
-1. Select the home menu icon to open the home menu.
+1. Select the **home menu icon** to open the home menu.
 
-1. Select **Role assignment**.
+1. Select **Role assignment** from the left menu.
 
    ![](../Media/lab2-23.png)
 
-1. Select Add members, then close.
+1. Select **Add members**, then close the window.
 
    ![](../Media/lab2-24.png)
 
-1. Expand owner.
+1. Expand **Owner** to view the details.
 
    ![](../Media/lab2-25.png)
 
-1. Expand contributor.
+1. Expand **Contributor** to view the details.
 
    ![](../Media/lab2-26.png)
 
-1. Select the home menu icon to open the home menu.
+1. Select the **home menu icon** to open the home menu.
 
-1. Select **Usage monitoring**.
+1. Select **Usage monitoring** from the left menu.
 
    ![](../Media/lab2-27.png)
 
-1. Select the date filter to view available options.
+1. Select the **date filter** to view the available options.
       
    ![](../Media/lab2-28.png)
 
-1. Select the home menu icon to open the home menu.
+   >**Note:** You can filter the data by selecting the **Date** drop-down on the right side and choosing a different time range, such as **Last 24 hours**.
 
-1. Select **Settings**.
+1. Click on the home menu icon to access the home menu.
+
+1. Choose **Settings** from the menu on the left.
 
    ![](../Media/lab2-29.png)
 
-1. Select preferences. Scroll down to view available options.
+1. Click on **Preferences**, scroll down to explore the available options, then select **Data and Privacy**, and finally click on **About**.
 
-1. Select data and privacy.
+1. Click the **X** to close the preferences window.
 
-1. Select About.
-
-1. Select the X to close the preferences window.
-
-1. Select where it says **Woodgrove** at the bottom left of the home menu.
+1. Click on **Woodgrove** at the bottom left of the home menu.
 
    ![](../Media/lab2-30.png)
 
-1. When you select this option, you see your tenants. This is referred to as the tenant switcher. In this case, Woodgrove is the only available tenant.
+1. When you select this option, you will see your tenants in the tenant switcher. In this case, **Woodgrove** is the only available tenant.
 
-1. Select the **Home** to return to the landing page.
+1. Click on **Home** to go back to the landing page.
 
-1. The largest card is your last session. Selecting the title of any session card takes you to that session.
+1. The largest card represents your most recent session. Clicking on the title of any session card will take you to that specific session.
 
-1. Select **View all sessions** to go to the My sessions page.
+1. Click on **View all sessions** to navigate to the My Sessions page.
 
-1. Select **Microsoft Copilot for Security**, next to the home menu icon, to return to the landing page.
+1. Click on **Microsoft Copilot for Security**, located next to the home menu icon, to return to the landing page.
 
-1. To the right of where it says "Get started with these promptbooks" are a left and right arrow key that allows you to scroll through the tiles for Microsoft security promptbooks. Select the **right arrow >**
+1. To the right of "Get started with these promptbooks," you'll see left and right arrow keys that let you scroll through the tiles for Microsoft security promptbooks. Click on the **right arrow >** to scroll forward.
 
    ![](../Media/lab2-31.png)
 
-1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. Select the title of any of the promptbook tiles to open that promptbook. Select **Vulnerability impact assessment**, as an example.
+1. Each tile displays the title of the promptbook, a brief description, the number of prompts, and a run icon. Click on the title of any promptbook tile to open it. For example, select **Vulnerability impact assessment** to open that promptbook.
 
    ![](../Media/lab2-32.png)
 
-1. The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts.
+1. The window for the selected promptbook provides details such as the creator of the promptbook, tags, a brief description, the inputs required to run the promptbook, and a list of the prompts.
 
-1. Note the information about the promptbook and the available options. For this simulation you can't start a new session, you'll do that in a subsequent exercise. 
+1. Take note of the information about the promptbook and the available options. For this simulation, you won’t be starting a new session—this will be covered in a later exercise.
 
-1. Select **X** to close the window.
+1. Click on **X** to close the window.
 
 1. Select **View the promptbook library**.
 
-    ![](../Media/lab2-33.png)
+   ![](../Media/lab2-33.png)
 
-1. To view promptbooks that you own, select My promptbooks.
+1. To view the promptbooks you own, click on **My promptbooks**.
 
-1. Select Woodgrove for a listing of promptbooks owned by Woodgrove, the name of a fictitious organization.
+1. Click on **Woodgrove** to see a list of promptbooks owned by Woodgrove, the name of a fictitious organization.
 
-1. To view built-in, Microsoft owned/developed promptbooks, select Microsoft.
+1. Click on **Microsoft** to view the built-in, Microsoft-owned/developed promptbooks.
 
-1. Select the filter icon. Here you can filter based on tags assigned to the workbook. Close the filter window by selecting the X in the New filter tab.
+1. Click on the filter icon to filter based on tags assigned to the workbook. To close the filter window, select the **X** in the New filter tab.
 
 1. Select **Microsoft Copilot for Security**, next to the home menu icon, to return to the landing page.
 
-1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon**.
-     
-1. Select **See all promptbooks**
+1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon (1)** then Select **See all promptbooks (2)** under **Get started using these examples**.
 
    ![](../Media/lab2-34.png)
 
-1. Scroll to view all the available promptbooks.
+1. Scroll down to view all the available promptbooks.
        
 1. Select the **back-arrow** next to the search bar to go back.
 
@@ -278,19 +276,19 @@ This exercise should take approximately **15** minutes to complete.
 
 1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. The **Plugins** tab is selected by default.
 
-1. Select whether you want to view all plugins, those that are enabled (on), or those that are disabled (off).
+1. Choose whether you want to view all plugins, those that are enabled **on (1)**, or those that are disabled **off (2)**.
 
    ![](../Media/lab2-20.png)
 
-1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
+1. Expand or collapse the list of Microsoft, non-Microsoft, and custom plugins as needed.
         
-1. Some plugins require configuring parameters. Select the **Set up** button for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
+1. Some plugins require configuring parameters. Click on the **Set up** button for the Microsoft Sentinel plugin to view the settings window. To close the settings window, click on **Cancel**. You will configure the plugin in a separate exercise.
 
-1. You should still be in the Manage sources window. Select **Files**.
+1. You should still be in the **Manage sources** window. Click on **Files**.
 
-1. Review the description.
+1. Review the description provided in the **Files** section.
 
-1. Files can be uploaded and used as a knowledge base by Copilot. In a subsequent exercise, you'll work with file uploads.
+1. Files can be uploaded and used as a knowledge base by Copilot. In a later exercise, you'll work with file uploads.
 
 1. Select **X** to close the manage sources window.
 
@@ -298,11 +296,11 @@ This exercise should take approximately **15** minutes to complete.
 
 1. Select the **Help (?)** icon.
 
-1. Select **Documentation**. This selection opens a new browser tab to the Microsoft Security Copilot documentation. Return to the Microsoft Security Copilot browser tab.
+1. Click on **Documentation** to open a new browser tab with the Microsoft Security Copilot documentation. Afterward, return to the Microsoft Security Copilot browser tab.
 
 1. Select **Help**.
 
-1. Anyone with access to Security Copilot can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem.
+1. Anyone with access to Security Copilot can use the self-help widget by clicking on the help icon and then selecting the **Help** tab. Here, you can find solutions to common problems by entering details about the issue.
 
 1. Users with a minimum role of Service Support Administrator or Helpdesk Administrator role can submit a support case to the Microsoft support team. If you have this role, a headset icon is displayed. Close the contact support page.
 
@@ -320,9 +318,7 @@ This exercise should take approximately **30** minutes to complete.
 
 1. From the Microsoft Defender portal:
 
-   - Expand **Investigation & response**.
-   - Expand  **Incidents & alerts**.
-   - Select **Incidents**.
+   - Expand **Investigation & response (1)**, then expand **Incidents & alerts (2)**, and finally select **Incidents (3)**.
 
      ![](../Media/lab2-40.png)
 
@@ -432,4 +428,4 @@ To run additional Microsoft Security Copilot use case simulations, browse to [Ex
    - Explored the Microsoft Security Copilot standalone experience
    - Explored the Microsoft Security Copilot embedded experience
 
-## You have successfully completed the lab.
+## You have successfully completed the lab

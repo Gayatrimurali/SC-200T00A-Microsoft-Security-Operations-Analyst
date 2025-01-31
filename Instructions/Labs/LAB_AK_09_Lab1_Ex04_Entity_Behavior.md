@@ -25,17 +25,19 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png).
 
 1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. On the left menu Select the **Entity behavior** page.
 
-1. On the popup from *Entity behavior settings*, select **Set UEBA**.
+1. On the popup from **Entity behavior settings**, select **Set UEBA**.
 
     ![Lab overview.](../Media/ueba.png)
 
-1. On the *Settings* tab under *Entity behaviour analytics*, scroll down the *Anomalies* section and verify read through the paragraph, and verify that the *switch* is *On (1)*.
+1. On the **Settings** tab under *Entity behaviour analytics*, scroll down the *Anomalies* section and verify read through the paragraph, and verify that the *switch* is **On (1)**.
 
 1. Select the **Go to analytics in oder to configure the anomalies (1)** link.
 
@@ -78,6 +80,9 @@ In this task, you will confirm Anomalies analytics rules are enabled.
     >**Note:** You can upgrade the **Flighting** rule to **Production** by changing the setting on this rule and saving the changes. The **Production** rule will become the **Flighting** rule afterward.
     
 ### Review
-In this lab, you have understood the Attacks and Detection Modelling.
+In this lab, you completed follwing tasks:
 
-## Select **Next** to continue to Lab 5.
+- Explored Entity Behavior 
+- Confirmed and reviewed Anomalies rules
+
+## Select **Next** to continue to Lab 5

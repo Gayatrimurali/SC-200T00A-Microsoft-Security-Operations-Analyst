@@ -22,9 +22,7 @@ An incident can include multiple alerts. It is an aggregation of all the relevan
 
 In this task, you will investigate an incident.
 
-1. Select your Microsoft Sentinel Workspace.
-
-1. Select the **Incidents** page.
+1. On the **Sentinal** page, select the **Incidents** page.
 
 1. Review the list of incidents.
 
@@ -104,6 +102,6 @@ In this task, you will investigate an incident.
 
 ## Review
 In this lab, you have completed the following:
-- You have investigated an incident.
+- Investigated an incident.
 
-## Select **Next** to continue to Lab 9.
+## Select **Next** to continue to Lab 9

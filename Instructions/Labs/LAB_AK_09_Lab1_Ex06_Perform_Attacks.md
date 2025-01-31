@@ -24,9 +24,9 @@ In this task, you will simulate a persistence attack by adding a registry key th
 
 1. Select **Start** in Windows. Then **Power**, next **Restart**.
 
-1. Follow the instructions to log into WINServer again.
+1. Follow the instructions to log into **WINServer** again.
 
-1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
+1. In the search of the task bar, enter **Command**. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
 
@@ -125,8 +125,9 @@ In this task, you will simulate a DNS-based Command and Control (C2) attack by c
 
 ## Review
 In this lab, you have completed the following:
-- Persistence Attack with Registry Key Add 
+
+- Persistence Attack with Registry Key Add
 - Command and Control Attack with DNS
 - Privilege Elevation Attack with User Add
 
-## Select **Next** to continue to Lab 7.
+## Select **Next** to continue to Lab 7

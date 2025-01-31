@@ -6,7 +6,7 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 You start by initializing the Defender for the Endpoint environment. Next, you onboard the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
 
->**Important:** The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
+>**Important:** The lab Virtual Machines are used across different modules. Be sure to **SAVE** your virtual machines. If you exit the lab without saving, you will need to re-run some configurations when you return.
 
 ## Lab objectives
 In this lab, you will perform the following:
@@ -25,13 +25,13 @@ In this lab, you will perform the following:
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint.
 
-1. If you are not already at the Microsoft Defender XDR portal, start the Microsoft Edge browser.
+1. If you are not already at the Microsoft Defender XDR portal, open the **Microsoft Edge** browser to access it.
 
-1. In the Edge browser, go to the Microsoft Defender XDR portal at (https://security.microsoft.com).
+1. In the **Edge** browser, go to the Microsoft Defender XDR portal by visiting the following link: [Security portal](https://security.microsoft.com).
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste **Email/Username: <inject key="AzureAdUserEmail"></inject>** and then select **Next**.
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste **Password: <inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
 
 1. Navigate to **Assets** from the left panel click on **Devices** and, wait for **few minutes** to get loaded once loading is completed refresh the page.
 
@@ -61,11 +61,13 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
-1. In the Deployment method make sure **Local Script (for up to 10 devices) (2** is displayed in the Deployment method drop-down and select the **Download onboarding package (3)** button. 
+1. In the Deployment method make sure **Local Script (for up to 10 devices) (2)** is displayed in the Deployment method drop-down and select the **Download onboarding package (3)** button. 
 
     ![Picture 1](../Media/onboarding.png)
 
-1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. 
+
+   >**Hint:** In case you don't see it, the file should be in the **C:\users\admin\downloads** directory.
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
@@ -85,21 +87,15 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 In this task, you will configure roles for use with device groups.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Naviagte back to **Azure Portal**.
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
-1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
-
-1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select Microsoft Entra ID.
+1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select **Microsoft Entra ID**.
 
 1. Select **Groups** and then click on **New group**.
 
 1. Enter the below details for the New group page:
 
-   |Setting|Value|
+    |Setting|Value|
     |---|---|
     |Group Type| **Microsoft 365** (1) |
     |Group Name| **Sg-IT** (2) |
@@ -112,9 +108,9 @@ In this task, you will configure roles for use with device groups.
 
 1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-   **Note**: Make sure you have selected **Group type** as Microsoft 365.
+   >**Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Select **Create. (2)**
+1. Select **Create (2).**
 
 1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
@@ -151,8 +147,8 @@ In this task, you will configure device groups that allow for access control and
 
     |General setting|Value|
     |---|---|
-    |Device group name|**Regular**|
-    |Remediation level| Full-remediate threats automatically|
+    |Device group name| Enter **Regular**|
+    |Remediation level| Select **Full-remediate threats automatically**|
 
 1. Select **Next**.
 
@@ -178,4 +174,4 @@ In this lab, you have completed the following:
 - Configured Roles
 - Configured Device Groups
 
-## Select **Next** to continue to Lab 2.
+## Select **Next** to continue to Lab 2

@@ -23,7 +23,9 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will access your Microsoft Sentinel workspace.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type **microsoft sentinel (1)**, then select **Microsoft Sentinel (2)**.
+
+   ![](../Media/l8e129.png)
 
 1. Select the Microsoft Sentinel Workspace you created in a previous lab.
 
@@ -33,7 +35,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Select **Data connectors** from the Configuration area in Microsoft Sentinel.
 
-1. Go to content hub and search **Common Event Format** and click on install
+1. Go to content hub and search **Common Event Format (1)** and click on **install (2)**.
 
    ![](../Media/l8e3-8.png)
 
@@ -51,7 +53,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
-1. Open LIN1 **(1)** Linux virtual machine and copy the **Public IP address (3)** of LIN1 from the overview **(2)** and paste on the notepad.
+1. Open **LIN1 (1)** Linux virtual machine and copy the **Public IP address (3)** of LIN1 from the **overview (2)** and paste on the notepad.
 
    ![](../Media/l8e3-5.png)
 
@@ -105,11 +107,11 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
     ![](../Media/l8e3-3.png)
 
-    >**Note:** Your Log Analytics workspace should show **2 Windows computers connected**. This corresponds to WIN2 and AZWIN01 virtual machines connected earlier.
+    >**Note:** Your Log Analytics workspace should show **2 Windows computers connected**. This corresponds to the WIN2 and AZWIN01 virtual machines connected earlier.
 
 1. Select the tab for **Linux servers**.
 
-    >**Note:** Your Log Analytics workspace should show **1 Linux computers connected**. This corresponds to the LIN1 (ubuntu1) virtual machine connected earlier with the CEF connector.
+    >**Note:** Your Log Analytics workspace should show **1 Linux computer connected**. This corresponds to the LIN1 (ubuntu1) virtual machine connected earlier with the CEF connector.
 
 1. Select **Log Analytics agent instructions**.
 
@@ -147,7 +149,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 In this task, you will configure the Syslog collection facilities.
 
-1. Go back to the Edge browser where you have your Microsoft Sentinel Portal open and close the "Log Analytics workspace" page and the "Syslog" data connector page by selecting the 'x' in the top right corner twice.
+1. Go back to the Edge browser where you have your **Microsoft Sentinel** open and close the **Log Analytics workspace** page and the **Syslog**" data connector page by selecting the **x** in the top right corner twice.
 
 1. In Microsoft Sentinel portal, select **Settings** from *Configuration* area and then select **Workspace settings** from the settings blade.
 
@@ -167,13 +169,14 @@ In this task, you will configure the Syslog collection facilities.
 
     ![](../Media/l8e3-1.png)
 
-   >**Note:** If you have not performed task 5 in exercise 1 because Licenses take some time to reflect then please go back to page 2 and perform task 5 to successfully complete this lab.
+   >**Note:** If you have not performed Task 5 in Exercise 1 because licenses take some time to reflect, please go back to page 2 and perform Task 5 to successfully complete this lab.
 
 ## Review 
 In this lab, you have completed the following:
-- able to access the Microsoft Sentinel Workspace
+
+- Accessed the Microsoft Sentinel Workspace
 - Connected a Linux Host using the Common Event Format connector
 - Connected a Linux host using the Syslog connector
 - Configured the facilities you want to collect and their severities for the Syslog connector
 
-## You have successfully completed this lab.
+## You have successfully completed this lab

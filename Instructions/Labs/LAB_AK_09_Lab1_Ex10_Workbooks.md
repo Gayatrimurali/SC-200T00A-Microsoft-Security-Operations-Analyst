@@ -26,7 +26,9 @@ Microsoft Sentinel allows you to create custom workbooks across your data and al
 
 In this task, you will explore the Microsoft Sentinel workbook templates.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select your Microsoft Sentinel Workspace.
 
@@ -159,8 +161,9 @@ overview of the workbook.
 
 ## Review
 In this lab, you have completed the following:
+
  - Explored workbook templates
  - Saved and modified a workbook template
  - Created a Workbook
 
-## Click on **Next** to proceed to Lab 11.
+## Click on **Next** to proceed to Lab 11

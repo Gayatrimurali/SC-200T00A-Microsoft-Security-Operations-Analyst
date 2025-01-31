@@ -22,7 +22,9 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 In this task, you'll review the User Management Schema parsers that are included with the Microsoft Sentinel deployment.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select your Microsoft Sentinel Workspace.
 
@@ -48,6 +50,7 @@ In this task, you'll review the User Management Schema parsers that are included
 
 ## Review
 In this lab, you have completed the following:
--  Deployed the User Management Schema ASIM parser. 
+
+-  Deployed the User Management Schema ASIM parser 
 
 ## Proceed to Exercise 10

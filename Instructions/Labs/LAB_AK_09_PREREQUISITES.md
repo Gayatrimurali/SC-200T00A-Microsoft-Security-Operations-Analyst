@@ -37,13 +37,13 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-      ![Enter Your Username](../Media/AZ-500-siginazportal.png)
+      ![Enter Your Username](../Media/sc900-image-1.png)
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](../Media/AZ-500-pass.png)
+     ![Enter Your Username](../Media/sc900-image-2.png)
 
 1. If you get a pop-up stating **Action Required** click on **Ask Later**.   
    

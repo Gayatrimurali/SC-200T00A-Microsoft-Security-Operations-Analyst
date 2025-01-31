@@ -11,6 +11,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 ## Lab objectives
 
  In this lab, you will perform the following:
+
  - Task 1: Activate a Microsoft Security Rule
 
 ## Estimated timing: 20 minutes
@@ -23,7 +24,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will activate a Microsoft Security rule.
 
-1. In the Azure portal's search bar **microsoft sentinel (1)**, type **Microsoft Sentinel (2)** and select it.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
 
    ![Picture 1](../Media/sc-200-19.png)
 
@@ -48,6 +49,8 @@ In this task, you will activate a Microsoft Security rule.
 1. Click on **save**.
 
 ### Review
-In this lab, you have successfully activated a Microsoft Security Rule.
+In this lab, you have completed the following:
 
-## Select **Next** to continue to Lab 2.
+- Activated a Microsoft Security Rule
+
+## Select **Next** to continue to Lab 2

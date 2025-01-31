@@ -26,39 +26,49 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
+1. In the Search bar of the Azure portal, type **Log Analytics (1)**, then select **Log Analytics workspaces (2)**.
 
-1. Select **+Create** from the command bar.
+   ![](../Media/l8e132.png)
 
-1. Select **Create new** under Resource Group and provide the name **RG-Defender (1)**. Select **Ok**.
-1. For the Name, enter as **uniquenameDefender (2)**.
+1. Select **+ Create** from the command bar.
 
-1. Select the default Region. 
+   ![](../Media/l8e133.png)
 
-1. Select **Review + Create (3)**.
+1. To create a **log analytics workspace**, follow these steps:
 
-   ![Picture 1](../Media/loganalytics1.png)
+    - Select **Create new** under Resource Group and provide the name **RG-Defender (1)**. Select **Ok**.
+    - For the Name, enter **uniquenameDefender (2)**.
+    - Leave the **default Region (3)**.
+    - Select **Review + Create (4)**.
 
-1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+      ![Picture 1](../Media/loganalytics1.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+1. Once the workspace validation has passed, select **Create**.
 
-   <validation step="8edea4c7-f6fb-4714-9021-fcf6b6942abe" />
+   ![](../Media/l8e135.png)
+
+1. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="8edea4c7-f6fb-4714-9021-fcf6b6942abe" />
 
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
 In this task, you will set up a Microsoft Sentinel workspace within the Azure portal. This workspace will be the foundation for monitoring, detecting, and responding to security threats.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type **microsoft sentinel (1)**, then select **Microsoft Sentinel (2)**.
+
+   ![](../Media/l8e129.png)
 
 1. Click on **+ Create**.  
 
 1. Next, in Add Microsoft Sentinel to a workspace page.
 
-1. Select your existing workspace (1) that was created in the previous task, then select **Add (2)**. This could take a few minutes.
+1. Select your existing  **log analytics workspace (1)** that was created in the previous task, then select **Add (2)**. This could take a few minutes.
 
    ![Picture 1](../Media/sentinelworkspace.png)
 
@@ -68,13 +78,13 @@ In this task, you will set up a Microsoft Sentinel workspace within the Azure po
 
 In this task, you will build basic KQL statements.
 
-   > **Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
+   > **Important:** For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
 
-1. Navigate to Log analytics workspace created in earlier step, expand **Classic (1)** select the **Virtual machine (depricated) (2)** option.
+1. Navigate to the Log Analytics workspace created in the earlier step, expand **Classic (1)**, select the **Virtual machine (deprecated) (2)** option, and on the right of the screen, click on the **WIN1 (3)** virtual machine displayed.
 
    ![Picture 1](../Media/111.png)
 
-1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
+1. Click on **Connect**. wait for the virtual machine status to change to **Connected**
 
    ![Picture 1](../Media/112.png)
 
@@ -82,7 +92,7 @@ In this task, you will build basic KQL statements.
 
    ![Picture 1](../Media/contentmgmt.png)
 
-1. Search for **Windows Security Events (1)** from the search bar and select it (2), Click on **Install(3)** on the right navigation page that shows up.
+1. Search for **Windows Security Events (1)** from the search bar and select **Windows Security Events (2)**, Click on **Install(3)** on the right navigation page that shows up.
 
    ![Picture 1](../Media/winevents.png)
 
@@ -90,11 +100,11 @@ In this task, you will build basic KQL statements.
 
 1. Select the **Security Events via Legacy Agent** Connector and click on open connector, scroll down look for **Select which events to stream** Select the **All events** radio button and click on **Apply Changes**.
 
-1. Go to Sentinel, click on **Logs (1)**. Close all the pop-ups if they appear (2).
+1. Go to Sentinel, click on **Logs (1)**. Close **(2)** all the pop-ups if they appear.
 
    ![Picture 1](../Media/logs.png)
 
-   >**Note:** You may encounter situations where some of the queries below don't work as expected. Please don't hesitate to refer to the lab guide—there are instances when the connector may take some time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated
+   >**Note:** You may encounter situations where some of the queries below don't work as expected. Please refer to the lab guide if needed—sometimes, the connector may take a little time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated.
 
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 
@@ -290,7 +300,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
         | summarize arg_max(TimeGenerated, *) by Account
         ```
 
-    >**Note:**  You can also review the "Total CPU" and "Data used for processed query" by selecting the "Query details" link on the lower right and compare the data between both statements.
+    >**Note:**  You can also review the "Total CPU" and "Data used for processed query" by selecting the "Query details" link on the lower right and comparing the data between both statements.
 
 1. The following statement demonstrates the **make_list()** function, which returns a *list* of all the values within the group. This KQL query will first filter the EventID with the where operator. Next, for each Computer, the results are a JSON array of Accounts. The resulting JSON array will include duplicate accounts. In the Query Window enter the following statement and select **Run**: 
 
@@ -368,7 +378,7 @@ In this task, you will build multi-table KQL statements.
         | union (SigninLogs | summarize count() | project count_)
         ```
 
-    >**Note:** The 'empty row' in the results will show the summarized count of SigninLogs.
+    >**Note:** The 'empty row' in the results will show the summarized count of **SigninLogs**.
 
 1. The following statement demonstrates the **union** operator support to union multiple tables with wildcards. In the Query Window enter the following statement and select **Run**: 
 
@@ -392,7 +402,7 @@ In this task, you will build multi-table KQL statements.
     ) on Account
     ```
 
-    >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
+    >**Important:** The first table specified in the join is considered the **Left** table, while the table after the **join** operator is the **Right** table. When working with columns from the tables, use `$left.ColumnName` and `$right.ColumnName` to distinguish which table's column is being referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, and rightsemi.
 
 1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
@@ -451,7 +461,7 @@ In this task, you will work with structured and unstructured string fields with 
     | sort by Date
     ```
 
-    >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, in serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized into string values. 
+    >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, when serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized as string values.
 
 1. The following statements demonstrates operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data to fields that can be queried. In the Query Window enter the following statement and select **Run**: 
 
@@ -483,7 +493,7 @@ In this task, you will work with structured and unstructured string fields with 
 
 1. A **function** is a log query that can be used in other log queries with the saved name as a command. To create a **function**, after running your query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want (for example: *PrivLogins*) in the **Function name** box and enter a **Legacy category** (for example: *General*) and select **Save**. The function will be available in KQL by using the function's alias:
 
-    >**Note:** You will not be able to do this in the lademo environment used for this lab since your account has only Reader permissions, but it is an important concept to make your queries more efficient and effective. 
+    >**Note:** You will not be able to do this in the **lademo** environment used for this lab since your account has only Reader permissions, but it is an important concept to make your queries more efficient and effective.
 
     ```KQL
     PrivLogins  
@@ -492,12 +502,12 @@ In this task, you will work with structured and unstructured string fields with 
 ## Review
 
 In this lab, you have completed the following:
-- Create a Log Analytics Workspace
-- Initialize the Microsoft Sentinel Workspace.
-- Run Basic KQL Statements
-- Analyze Results in KQL with the Summarize Operator
-- Create visualizations in KQL with the Render Operator
+- Created a Log Analytics Workspace
+- Initialized the Microsoft Sentinel Workspace.
+- Ran Basic KQL Statements
+- Analyzed Results in KQL with the Summarize Operator
+- Created visualizations in KQL with the Render Operator
 - Build multi-table statements in KQL
-- Work with string data in KQL
+- Worked with string data in KQL
 
-## You have successfully completed the lab.
+## You have successfully completed the lab

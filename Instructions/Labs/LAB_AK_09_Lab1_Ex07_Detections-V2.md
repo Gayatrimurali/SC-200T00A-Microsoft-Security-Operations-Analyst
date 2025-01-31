@@ -25,7 +25,9 @@ Analytics rules search for specific events or sets of events across your environ
 
 In this task, you will create a detection for the first attack of the previous exercise.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select the Microsoft Sentinel Workspace you created earlier.
 
@@ -209,6 +211,6 @@ In this task, you will create a detection for the second attack of the previous 
 ## Review
 In this lab, you have completed the following:
 - Persistence Attack Detection
-- Privilege Elevation Attack Detection
+- Privileged Elevation Attack Detection
 
-## Select **Next** to continue to Lab 8.
+## Select **Next** to continue to Lab 8

@@ -30,17 +30,20 @@ In this task, you will access your Microsoft Sentinel workspace.
 
    ![](../Media/l8e133.png)
 
-1. Select Resource Group **RG-Defender (2)**  from the drop down.
+1. To create a **log analytics workspace**, follow these steps:
 
-1. For the Name, enter **uniquenameDefender (3)**.
+    - Select **Create new** under Resource Group and provide the name **RG-Defender (1)**. Select **Ok**.
+    - For the Name, enter **uniquenameDefender (2)**.
+    - Leave the **default Region **(3)**.
+    - Select **Review + Create (4)**.
 
-1. Select **Review + Create (4)**.
+      ![Picture 1](../Media/loganalytics1.png)
 
-   ![](../Media/l8e134.png)
+1. Once the workspace validation has passed, select **Create**.
 
-1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+   ![](../Media/l8e135.png)
 
-    ![](../Media/l8e135.png)
+1. Wait for the new workspace to be provisioned, this may take a few minutes.
  
 1. In the Search bar of the Azure portal, type **microsoft sentinel (1)**, then select **Microsoft Sentinel (2)**.
 
@@ -58,11 +61,13 @@ In this task, you will access your Microsoft Sentinel workspace.
 
 In this task, you will connect the Microsoft Defender for Cloud data connector.
 
+  >**Important:** To *Enable* Bi-directional sync, please rerun  **[Lab 05 Exercise 1](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_05_Lab1_Ex01_Enable_MDC.html)**, Task 2, and select **Setup** from the *Microsoft Defender for Cloud* navigation menu to verify all eligible Azure subscriptions are onboarded.
+
 1. In the Microsoft Sentinel navigation menu, scroll down to the **Content management (1)** section and select **Content Hub**.
 
-1.  In the *Content hub*, search for the **Microsoft Defender for Cloud (2)** solution and select it (3) from the list.
+1.  In the **Content hub**, search for the **Microsoft Defender for Cloud (2)** solution and select **Microsoft Defender for Cloud (3)** from the list.
 
-1. On the *Microsoft Defender for Cloud* solution details page select **Install (4)**.
+1. On the **Microsoft Defender for Cloud** solution details page select **Install (4)**.
 
    ![](../Media/l8e136.png)
 
@@ -74,15 +79,13 @@ In this task, you will connect the Microsoft Defender for Cloud data connector.
 
     >**Note:** The *Microsoft Defender for Cloud* solution installs the *Subscription-based Microsoft Defender for Cloud (Legacy)* Data connector, the *Tenant-based Microsoft Defender for Cloud (Preview)* Data connector, and an Analytics rule. The *Tenant-based Microsoft Defender for Cloud (Preview)* Data connector is used when a tenant has multiple subscriptions.
 
-1. Select the *Subscription-based Microsoft Defender for Cloud (Legacy)* Data connector check-box, and select **Open connector page**.
+1. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** Data connector check-box, and select **Open connector page (2)**.
 
    ![](../Media/l8e138.png)
 
-1. In the *Configuration* section, under the *Instructions* tab, **select** the checkbox for your subscription and slide the **Status** option to the right.
+1. In the *Configuration* section, under the *Instructions* tab, **select** the checkbox for your **subscription** and slide the **Status** option to the right.
 
     ![](../Media/l8e139.png)
-
-    >**Note:** If it switches back to disconnected, please review the Learning Path 3, Exercise 1, Task 1 to assign the proper permissions to your account.
 
 1. The *Status* should be now **Connected** and "Bi-directional sync" should be *Enabled*.
 
@@ -106,7 +109,7 @@ In this task, you will connect the *Azure Activity* data connector.
 
     >**Note:** The *Azure Activity* solution installs the *Azure Activity* Data connector, 12 Analytic rules, 14 Hunting queries and 1 Workbook.
 
-1. Select the *Azure Activity (1)* Data connector and select **Open connector page (2)**.
+1. Select the **Azure Activity (1)** Data connector and select **Open connector page (2)**.
 
     ![](../Media/l8e143.png)
 
@@ -130,8 +133,9 @@ In this task, you will connect the *Azure Activity* data connector.
 
 ## Review
 In this lab, you have completed the following:
+
 - Accessed the Microsoft Sentinel Workspace
 - Connected the Microsoft Defender for Cloud data connector
 - Connected the Azure Activity data connector
 
-## Select **Next** to continue to Lab 2.
+## Select **Next** to continue to Lab 2

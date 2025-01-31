@@ -6,9 +6,9 @@ You're a Security Operations Analyst working at a company that is implementing M
 
 >**Important:** The lab exercises for Learning Path #7 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
 
-
 ## Lab objectives
  In this lab, you will perform the following:
+
 - Task 1: Create a Log Analytics Workspace
 - Task 2: Deploy Microsoft Sentinel to a workspace
 - Task 3: Configure data retention
@@ -30,23 +30,26 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
    ![](../Media/l8e132.png)
 
-1. Select **+Create** from the command bar.
+1. Select **+ Create** from the command bar.
 
    ![](../Media/l8e133.png)
 
-1. Select Resource Group **RG-Defender (2)**  from the drop down.
+1. To create a **log analytics workspace**, follow these steps:
 
-1. For the Name, enter **uniquenameDefender (3)**.
+    - Select **Create new** under Resource Group and provide the name **RG-Defender (1)**. Select **Ok**.
+    - For the Name, enter **uniquenameDefender (2)**.
+    - Leave the **default Region **(3)**.
+    - Select **Review + Create (4)**.
 
-1. Select **Review + Create (4)**.
+      ![Picture 1](../Media/loganalytics1.png)
 
-   ![](../Media/l8e134.png)
-
-1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+1. Once the workspace validation has passed, select **Create**.
 
    ![](../Media/l8e135.png)
 
-### Task 2 - Deploy Microsoft Sentinel to a workspace
+1. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+### Task 2 : Deploy Microsoft Sentinel to a workspace
 
 In this task, you will deploy Microsoft Sentinel to an existing Log Analytics workspace, enabling it to collect, detect, and respond to security threats.
 
@@ -54,15 +57,15 @@ In this task, you will deploy Microsoft Sentinel to an existing Log Analytics wo
 
    ![](../Media/l8e129.png)
 
-1. Select **+Create** from the command bar.
+1. Select **+ Create** from the command bar.
 
- 1. Select the newly created workspace and click on **Add**.
+1. Select the newly created workspace and click on **Add**.
   
-    ![](../Media/l8e131.png)
+   ![](../Media/l8e131.png)
 
-1. Select your Microsoft Sentinel Workspace that you created in the previous lab.
+1. In the Microsoft Sentinel free trial activated tab, select **Ok**.
 
-### Task 3 - Configure data retention
+### Task 3 : Configure data retention
 
 1. In the Search bar of the Azure portal, type **Log Analytics (1)**, then select **Log Analytics workspaces (2)**. 
 
@@ -70,15 +73,11 @@ In this task, you will deploy Microsoft Sentinel to an existing Log Analytics wo
 
 1. Select **uniquenameDefender** Log Analytics workspaces. 
 
-1. Expand the *Settings* section in the navigation menu and select **Usage and estimated costs**.
-
-1. Select **Data retention**.
+1. Expand the *Settings* section in the navigation menu and select **Usage and estimated costs (1)** then Select **Data retention (2)**.
 
    ![](../Media/l7-1.png)
 
-1. Change data retention period to **180 days**.
-
-1. Select **OK**.
+1. Change data retention period to **180 days (1)** then Select **OK (2)**.
 
    ![](../Media/l7-2.png)
 
@@ -86,11 +85,11 @@ In this task, you will deploy Microsoft Sentinel to an existing Log Analytics wo
 
 In this task, you will create a watchlist in Microsoft Sentinel.
 
-1. In the search box of your Labvm, enter *Notepad (1)*. Select **Notepad (2)** from the results.
+1. In the search box of your Labvm, enter **Notepad (1)**. Select **Notepad (2)** from the results.
 
    ![](../Media/l7-3.png)
 
-1. Type ***Hostname*** then enter for a new line.
+1. Type **Hostname** then enter for a new line.
 
 1. From row 2 of the notepad, copy the following hostnames, each one in a different line:
 
@@ -114,7 +113,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
    >**Hint:** The file can be saved in the *Documents* folder.
 
-1. Close Notepad.
+1. **Close** the Notepad.
 
 1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
 
@@ -122,21 +121,17 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
    ![](../Media/l8e130.png)
 
-1. In Microsoft Sentinel, On the left menu, select the **Watchlist** option under the **Configuration** area.
-
-1. Select **+ New** from the command bar.
+1. In Microsoft Sentinel, On the left menu, select the **Watchlist (1)** option under the **Configuration** area then Select **+ New (2)** from the command bar.
 
    ![](../Media/l7-7.png)
 
-1. In the Watchlist wizard, enter the following:
+1. In the Watchlist wizard, enter the following then Select **Next: Source > (4)**:
 
     |General setting|Value|
     |---|---|
     |Name|**HighValueHosts (1)**|
     |Description|**High Value Hosts (2)**|
     |Alias|**HighValueHosts (3)**|
-
-1. Select, **Next: Source > (4)**.
 
    ![](../Media/l7-8.png)
 
@@ -160,17 +155,17 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
      ![](../Media/l7-12.png)
 
-    >**Important:** It could take up to ten minutes for the watchlist to appear. **Please continue to with the following task and run this command on the next lab**.
+    >**Important:** It could take up to ten minutes for the watchlist to appear. **Please continue with the following task and run this command in the next lab**.
     
-    >**Note:** You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
+    >**Note:**You can now use the `_GetWatchlist('HighValueHosts')` in your own KQL statements to access the list. The column to reference would be **Hostname**.
 
 1. Close the *Logs* window by selecting the 'x' in the top-right. 
 
-    ![](../Media/l7-13.png)
+   ![](../Media/l7-13.png)
 
 1. Select **OK** to discard the unsaved edits.
 
-    ![](../Media/l7-14.png)
+   ![](../Media/l7-14.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -193,7 +188,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. For the ***Threat types***, click on **+ (1)**, enter tag **malicious-activity (1)** and select **Apply (3)**.
 
-    ![](../Media/l7-16.png)
+   ![](../Media/l7-16.png)
 
 1. For the ***Name (1)***, enter indicator. 
 
@@ -230,15 +225,13 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 In this task, you will change the retention period for the SecurityEvent table.
 
-1. In Microsoft Sentinel, select the **Settings (1)** option under the ***Configuration*** area.
-
-1. Select **Workspace settings (2)**.
+1. In Microsoft Sentinel, select the **Settings (1)** option under the ***Configuration*** area then select **Workspace settings (2)**.
 
    ![](../Media/l7-20.png)
 
-1. In Log Analytics workspace, select the **Tables (1)** option under the ***Settings*** area.
+1. In Log Analytics workspace, select the **Tables (1)** option under the **Settings** area.
 
-1. Search and select the table **SecurityEvent (2)**, and then right click on ***Security Event (3)*** table.
+1. Search and select the table **SecurityEvent (2)**, and then right click on **Security Event (3)** table.
 
    ![](../Media/l7-21.png)
 
@@ -254,6 +247,7 @@ In this task, you will change the retention period for the SecurityEvent table.
 
 ## Review
 In this lab, you have completed the following:
+
 - Created a Log Analytics Workspace
 - Deployed Microsoft Sentinel to a workspace
 - Configured data retention
@@ -261,4 +255,4 @@ In this lab, you have completed the following:
 - Created a Threat Indicator
 - Configured log retention
 
-## You have successfully completed the lab.
+## You have successfully completed the lab

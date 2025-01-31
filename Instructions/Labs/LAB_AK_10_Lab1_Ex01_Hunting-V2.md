@@ -25,11 +25,13 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. 1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Logs** 
+1. Select **Logs** .
 
 1. Enter the following KQL Statement in the *New Query 1* space:
 
@@ -273,9 +275,9 @@ In this task, you will use a Search job to look for a C2.
 
 ## Review
 In this lab, you have completed the following:
-- We created a hunting query.
-- We created an NRT query rule.
-- We Created a Search.
-- We Created a hunt that combines multiple queries into a MITRE tactic.
+- Created a hunting query.
+- Created an NRT query rule.
+- Created a Search.
+- Created a hunt that combines multiple queries into a MITRE tactic.
 
-## Click on **Next** to proceed to Lab 2. 
+## Click on **Next** to proceed to Lab 2 

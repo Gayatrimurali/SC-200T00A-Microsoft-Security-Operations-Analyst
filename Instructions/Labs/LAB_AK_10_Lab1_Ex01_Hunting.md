@@ -25,7 +25,9 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. 1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select your Microsoft Sentinel Workspace.
 
@@ -48,11 +50,11 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Review the different results. You have now identified PowerShell requests that are running in your environment.
 
+      ![Picture 1](../Media/logssupd1.png)
+
 1. Select the checkbox of the results that shows the **Administrator** SubjectUsername.
 
 1. In the middle command bar, select the **Add bookmark** button.
-
-   ![Picture 1](../Media/logssupd1.png)
 
 1. Select **+ Add new entity** under *Entity mapping*.
 
@@ -280,4 +282,4 @@ In this lab, you have completed the following:
 - We Created a Search.
 - We Created a hunt that combines multiple queries into a MITRE tactic.
 
-## Click on **Next** to proceed to Lab 2. 
+## Click on **Next** to proceed to Lab 2 

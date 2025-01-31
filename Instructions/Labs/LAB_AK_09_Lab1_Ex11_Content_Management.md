@@ -24,7 +24,9 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select your Microsoft Sentinel Workspace.
 
@@ -36,7 +38,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
    ![Picture 1](../Media/export.png)
 
-1. The rule is exported to a text file named *Azure_Sentinel_analytic_rule.json*.
+1. The rule is exported to a text file named **Azure_Sentinel_analytic_rule.json**.
 
 1. Select **Open file** below the name of the downloaded file and then select **More apps**.
 
@@ -72,7 +74,7 @@ In this task, you will create an Azure DevOps repository.
 
 1. Select **Upload Files**.
 
-    ![Picture 1](../Media/uploadfilesinrepo.png)
+   ![Picture 1](../Media/uploadfilesinrepo.png)
 
 1. Select **Browse** and select the file **Azure_Sentinel_analytic_rule.json** from your *Downloads* directory.
 
@@ -94,7 +96,9 @@ In this task, you will create an Azure DevOps repository.
 
 In this task, you will connect Microsoft Sentinel to Azure DevOps to manage content and repositories.
 
-1. Select the *Azure Portal*/*Microsoft Sentinel* tab in your browser.
+1. In the Azure portal's search bar type **Microsoft sentinel (1)**, and select **Microsoft Sentinel (2)**.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. In Microsoft Sentinel, select **Repositories (Preview)** in the *Content Management* section.
 
@@ -120,15 +124,15 @@ In this task, you will connect Microsoft Sentinel to Azure DevOps to manage cont
 
 1. Go back to Microsoft Sentinel workspace if needed
 
-1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until the last deployment status* is *Failed*.  
+1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until the last deployment status* is **Failed**.  
 
-    ![Picture 1](../Media/failed.png)
+   ![Picture 1](../Media/failed.png)
 
-    >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
+   >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
 ## Review
--  In this Lab we successfully explored Microsoft sentinel
-- We created a playbook and set it for automation.
-- We initiated the attack and created detections for those and investigated it
+-  Explored Microsoft sentinel
+- Created a playbook and set it for automation.
+- Initiated the attack and created detections for those and investigated it
    
-## You have successfully completed the lab.
+## You have successfully completed the lab

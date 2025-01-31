@@ -1,10 +1,11 @@
 # Module 3 - Lab 1 - Exercise 1 - Explore Microsoft Purview Audit logs
 
-## Lab scenario
+## Lab Scenario
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR and Microsoft Purview. You're assisting colleagues on the the IT compliance team with configuring both Purview Audit (Standard) and Audit (Premium). Their objective is to ensure that all access and modifications to patient data in our network of healthcare facilitie sare accurately logged to meet health data protection regulations.
 
-## Lab objectives
+## Lab Objectives
+
 In this lab, you will perform:
 
 - Task 1: Enable Purview Audit logs
@@ -21,9 +22,18 @@ In this task, you'll assign preset security policies for Exchange Online Protect
 
 1. In the Microsoft Edge browser, go to the Microsoft Defender XDR portal at (<https://security.microsoft.com>).
 
-1. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
+1. You'll see the **Sign into Microsoft Defender XDR portal** tab. Here, enter your credentials to log in:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+      ![Enter Your Username](../Media/sc900-image-1.png)
+ 
+1. Next, provide your password to continue:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+      ![Enter Your Password](../Media/sc900-image-2.png)
 
-1. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
 
 1. From the navigation menu, expand *Operational technology* and select **More resources**.
 
@@ -45,11 +55,11 @@ In this task, you'll assign preset security policies for Exchange Online Protect
 
 1. Once you select this option, the blue bar should disappear from this page.
 
-    >**Note:**
-    > It might take 60 minutes to start recording activities.
+    >**Note:** It might take 60 minutes to start recording activities.
 
 ### Review
  In this lab, you have completed the following:
+
    - Enabled Purview Audit logs
 
-## You have successfully completed the lab.
+## You have successfully completed the lab

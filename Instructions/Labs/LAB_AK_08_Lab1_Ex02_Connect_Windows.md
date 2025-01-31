@@ -50,17 +50,17 @@ In this task, you'll create a Windows virtual machine in Azure.
 
     | Setting | Value |
     | --- | --- |
-    | Subscription | your default subscription (1) | 
-    | Resource Group | Select **RG-AZWIN01** (2)  |
-    | Virtual machine name |  Enter **AZWIN01** (3) | 
-    | Region | **<inject key="Region" enableCopy="false" />** (4)|
+    | Subscription | your default subscription **(1)** | 
+    | Resource Group | Select **RG-AZWIN01 (2)**   |
+    | Virtual machine name |  Enter **AZWIN01 (3)**  | 
+    | Region | **<inject key="Region" enableCopy="false" /> (4)** |
 
       ![](../Media/l8e1-6.png)
 
     | Setting | Value |
     | --- | --- |
-    | Image | **Windows 10 Enterprise, version 22H2** (5) | 
-    | Size| Should be selected as **Standard_B2s**. If it appears empty, select **See all sizes**, choose the **Standard_DS1_v2** click **Select**. (6)|
+    | Image | **Windows 10 Enterprise, version 22H2 (5)**  | 
+    | Size| Should be selected as **Standard_B2s**. If it appears empty, select **See all sizes**, choose the **Standard_DS1_v2 (6)** click **Select**. |
 
       ![](../Media/l8e1-7.png)
 
@@ -82,7 +82,7 @@ In this task, you'll create a Windows virtual machine in Azure.
 
     ![](../Media/l8e1-10.png)
 
-    >**Note:** If there is a *Networking* validation failure, select that tab, review its contents and then select **Review + create** again.
+    >**Note:** If there is a *Networking* validation failure, select that tab, review its contents, and then select **Review + create** again.
 
 ### Task 2: Install Azure Arc on an On-Premises Server
 
@@ -90,31 +90,29 @@ In this task, you install Azure Arc on an on-premises server to make onboarding 
 
 >**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
 
-In this task, you will install Azure Arc and connect a non-Azure Windows virtual machine to Microsoft Sentinel.  
+>**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
 
-   >**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
-
-   >**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
-
- 1. In the lab virtual machine, search for **Hyper-V Manager** from task bar and select to open.
+1. In the lab virtual machine, search for **Hyper-V Manager** from task bar and select to open.
 
     ![](../Media/l8e1-13.png)
 
- 1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/> (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
+1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/> (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
 
     ![](../Media/l8e1-12.png)
  
- 1. Inside **WIN2** Click on **connect**.
+1. Inside **WIN2** Click on **connect**.
  
     ![](../Media/l8e1-14.png)
 
- 1. Enter the **Password** as `Password.1!!` when prompted then hit on **Enter**.
+1. Enter the **Password** as `Password.1!!` when prompted then hit on **Enter**.
 
      ![](../Media/l8e3-16.png)
 
- 1. Open the Microsoft Edge browser inside **WIN2**.
+1. Open the Microsoft Edge browser inside **WIN2**.
 
- 1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
+1. In the **WIN2**, click on the Azure Portal icon as shown below:
+ 
+   ![Launch Azure Portal](../Media/sc900-image(1).png)
 
 1. In the **Sign in** dialog box, copy and paste **Email/Username: <inject key="AzureAdUserEmail"></inject>** and then select Next.
 
@@ -220,7 +218,7 @@ In this task, you'll connect an Azure Windows virtual machine to Microsoft Senti
 
     ![](../Media/l8e3-15.png)
 
-    >**Note:** The *Windows Security Events* solution installs both the *Windows Security Events via AMA* and the *Security Events via Legacy Agent* Data connectors. Plus 2 Workbooks, 20 Analytic Rules, and 43 Hunting Queries.
+    >**Note:** The *Windows Security Events* solution installs both the *Windows Security Events via AMA* and the *Security Events via Legacy Agent* Data connectors, along with 2 Workbooks, 20 Analytic Rules, and 43 Hunting Queries.
 
 1. Select the **Windows Security Events via AMA (1)** Data connector, and select **Open connector page (2)** on the connector information blade.
 
@@ -264,7 +262,7 @@ In this task, you'll add an Azure Arc connected, non-Azure Windows virtual machi
 
     ![](../Media/l8e3-11.png)
 
-    >**Important:** If you do not see , please refer to the Learning Path 8, Exercise 2, Task 2 where you installed Azure Arc in this server.
+    >**Important:** If you do not see it, please refer to Learning Path 8, Exercise 2, Task 2, where you installed Azure Arc on this server.
 
 1. Select **Next: Collect**, then **Next: Review + create**.
 
@@ -281,9 +279,10 @@ In this task, you'll add an Azure Arc connected, non-Azure Windows virtual machi
 
 ## Review
 In this lab, you have completed the following:
+
 - Created a Windows Virtual Machine in Azure
 - Installed Azure Arc on an On-Premises Server
 - Connected an Azure Windows virtual machine
 - Connected a non-Azure Windows Machine
 
-## Select **Next** to continue to Lab 3.
+## Select **Next** to continue to Lab 3
