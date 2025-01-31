@@ -156,8 +156,8 @@ In this task, you will create a watchlist in Microsoft Sentinel.
      ![](../Media/l7-12.png)
 
     >**Important:** It could take up to ten minutes for the watchlist to appear. **Please continue with the following task and run this command in the next lab**.
-    
-    >**Note:**You can now use the `_GetWatchlist('HighValueHosts')` in your own KQL statements to access the list. The column to reference would be **Hostname**.
+     
+    >**Note:** You can now use the `_GetWatchlist('HighValueHosts')` in your own KQL statements to access the list. The column to reference would be **Hostname**.
 
 1. Close the *Logs* window by selecting the 'x' in the top-right. 
 
