@@ -22,17 +22,9 @@ In this task, you'll assign preset security policies for Exchange Online Protect
 
 1. In the Microsoft Edge browser, go to the Microsoft Defender XDR portal at (<https://security.microsoft.com>).
 
-1. You'll see the **Sign into Microsoft Defender XDR portal** tab. Here, enter your credentials to log in:
+1. You'll see the **Sign into Microsoft Defender XDR portal** tab. Here, enter your **Username: <inject key="AzureAdUserEmail"></inject>** to log in:
  
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
-      ![Enter Your Username](../Media/sc900-image-1.png)
- 
-1. Next, provide your password to continue:
- 
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
- 
-      ![Enter Your Password](../Media/sc900-image-2.png)
+1. Next, provide your **Password: <inject key="AzureAdUserPassword"></inject>** to continue.
 
 1. From the navigation menu, expand *Operational technology* and select **More resources**.
 
