@@ -110,24 +110,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
-### Task 3: Preparing the Microsoft Defender XDR workspace
-
-In this task, you will prepare the Microsoft Defender XDR workspace by setting up the required configurations.
-
-1. On the **Microsoft Defender** portal, from the navigation menu, select **Home** from the left.
-
-    >**Note:** You may need to scroll all the way to the top of the menu.
-
-1. On the **Home** portal page, the **Get your SIEM and XDR in one place** banner is displayed.
-
-1. Scroll down the menu items to **Assets** and select **Devices**.
-
-1. The process to deploy the Defender XDR workspace should start and you should see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
-
-   >**Note:** If the message **"Hang on! We're preparing new spaces for your data and connecting them"** does not appear, or if the **"Settings > Microsoft Defender XDR > Account"** page opens but you see **"Failed to load data storage location. Please try again later"**, select **"Alert service settings"** from the **"General"** menu. Alternatively, go to the navigation menu, scroll down to the **"Assets"** section, and select **"Devices"**.
-
-1. When the new space is completed successfully, you will see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and Roles, and Streaming API. You will also see **Preview Features** turned on.
-
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
