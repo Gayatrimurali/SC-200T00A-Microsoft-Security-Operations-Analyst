@@ -8,7 +8,6 @@
 In this lab, you will perform:
 - Task 1: Create a Group in Microsoft Entra ID
 - Task 2: Apply Microsoft Defender XDR for Office 365 present security policies
-- Task 3: Preparing the Microsoft Defender XDR workspace
     
 ## Estimated timing: 60 minutes
 
@@ -122,6 +121,5 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
    - Created a Group in Microsoft Entra ID
    - Applied Microsoft Defender XDR for Office 365 preset security policies
-   - Prepared the Microsoft Defender XDR workspace
 
 ## You have successfully completed the lab
