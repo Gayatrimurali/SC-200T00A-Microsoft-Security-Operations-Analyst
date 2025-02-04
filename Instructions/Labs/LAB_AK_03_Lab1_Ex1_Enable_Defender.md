@@ -152,7 +152,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Scroll down and select the **Download** button.
 
-      ![Picture 1](../Media/secure21.png)
+      ![Picture 1](../Media/secure21-1.png)
 
      > **Note:** Select **Keep** when prompted in the pop-up.
 
@@ -217,7 +217,7 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. In the **Resources** tab, click on **+ Add resources (1)**. In the **Select a scope** page, expand the *Scope* column for **RG-Defender**, then select **WINServer (Azure Arc) (2)** and select **Apply (3)**.
 
-      ![Picture 1](../Media/secure23.png)
+      ![Picture 1](../Media/secure23-1.png)
 
       > **Note:** You may need to set the column filter for *Resource type* to *Server-Azure Arc* if **WINServer (Azure Arc)** is not displayed.
 
