@@ -19,12 +19,9 @@ This lab is designed to equip participants with hands-on experience in using Azu
 
 ## Prerequisites
 
-Participants should have: 
-
--
--
--
--
+- Basic knowledge of on-premises Hyper-V infrastructure
+- Familiarity with Security Information and Event Management (SIEM) concepts
+- Basic understanding of KQL syntax for querying and analyzing logs
 
 ## Architecture
 
