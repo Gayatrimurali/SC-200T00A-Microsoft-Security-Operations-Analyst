@@ -23,7 +23,7 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
    
     ![Picture 1](../Media/searchazarc.png "search azure arc")
   
-1. On the **Azure Arc** page, select **Machines (1)** under **Infrastructure**, click on **+Add/create (2)** and then **Add a Machine (3)**.
+1. On the **Azure Arc** page, select **Machines (1)** under **Azure Arc Resources**, click on **+Add/create (2)** and then **Add a Machine (3)**.
     
     ![Picture 1](../Media/secure1.png "search azure arc")
     
@@ -106,6 +106,8 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help
+
+     <validation step="7872d02c-327e-400c-bea2-978752ec1e82" />
     
 ## Summary:
 
