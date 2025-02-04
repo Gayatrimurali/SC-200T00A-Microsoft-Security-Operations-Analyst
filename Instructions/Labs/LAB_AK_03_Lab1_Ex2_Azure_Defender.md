@@ -1,4 +1,4 @@
-# Module 3 - Lab 1 - Exercise 2 - Mitigate threats using Microsoft Defender for Cloud
+# Lab 03: Mitigate threats using Microsoft Defender for Cloud
 
 ## Lab scenario
 
