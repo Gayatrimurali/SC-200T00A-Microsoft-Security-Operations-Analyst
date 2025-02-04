@@ -21,15 +21,15 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
 
 1. In the **search resources, services and docs bar**, type **Azure arc** and select it from suggestions, as shown below:
    
-    ![Screenshot of the search azure arc.](Images/searchazarc.png "search azure arc")
+    ![Picture 1](../Media/searchazarc.png "search azure arc")
   
 1. On the **Azure Arc** page, select **Machines (1)** under **Infrastructure**, click on **+Add/create (2)** and then **Add a Machine (3)**.
     
-    ![Screenshot of the add server.](Images/HOL3E1S3.png "add server")
+    ![Picture 1](../Media/secure1.png "search azure arc")
     
 1. In the **Add servers with Azure Arc** page, click **Generate script** under **Add a single server**.
 
-    ![Screenshot of the Generate script.](Images/singleserver.png "Generate script")
+    ![Picture 1](../Media/secure2.png "search azure arc")
     
 1. Under the **Basics** tab, fill in the following details:
      
@@ -43,37 +43,37 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
    
    - Leave other values as default and Click on **Download and run script (4)**
 
-        ![Screenshot of the resource details tab.](Images/HOL3E1S5.png "resource details tab")
+       ![Picture 1](../Media/secure3.png "search azure arc")
 
 1. Under the **Download and run script** tab, **copy (1)** the entire script and paste it into a notepad as it will be used in the further steps and then click on **Close (2)**.
 
-    ![Screenshot of the copy script.](Images/upd-copyscript.png "copy script")
+    ![Picture 1](../Media/upd-copyscript.png "copy script")
     
 1. Go to the **Start (1)** button in the VM, search for **Hyper-V Manager (2)** there and select it. 
 
-    ![Screenshot of Hyper-V Manager, with the 'Hyper-V Manager' action highlighted.](Images/upd-hyper-v-manager.png "Hyper-V Manager")
+    ![Picture 1](../Media/upd-hyper-v-manager.png "Hyper-V Manager")
 
    > **Note:** You can also open the **Hyper-V manager** by clicking on the icon that is present in the taskbar. 
     
 1. In Hyper-V Manager, select **HOSTVMS<inject key="DeploymentID" enableCopy="false" />**. 
   
-    ![Screenshot of Hyper-V Manager on the SmartHotelHost.](Images/HOL3-EX1-S10.png "Hyper-V Manager")
+    ![Picture 1](../Media/HOL3-EX1-S10.png "Hyper-V Manager")
     
 1. In Hyper-V Manager, select the **AzureArcVM (1)** VM, then select **Start (2)** on the right if not already running.
 
-    ![Screenshot of Hyper-V Manager showing the start button for the AzureArcVM.](Images/HOL3-EX1-S11.png "Start AzureArcVM")    
+    ![Picture 1](../Media/HOL3-EX1-S11.png "Start AzureArcVM")    
     
 1. In Hyper-V Manager, select the **AzureArcVM (1)** VM, then select **Connect (2)** on the right.
 
-    ![Screenshot of Hyper-V Manager showing the connect button for the AzureArcVM.](Images/HOL3-EX1-S12.png "Connect to AzureArcVM")  
+    ![Picture 1](../Media/secure4.png "Connect to AzureArcVM")  
     
 1. In the Connect to AzureArcVM pop-up, click on **Connect** and then log into the VM with the **Administrator password**: **<inject key="SmartHotel Admin Password" />** (the login screen may pick up your local keyboard mapping, use the 'eyeball' icon to check).
  
-    ![Screenshot of the Connect to AzureArcVM.](Images/HOL3-EX1-S13.png)
+    ![Picture 1](../Media/HOL3-EX1-S13.png)
     
 1. From the **Start (1)** menu of the AzureArcVM, search for **Windows Powershell (2)** and open it **(3)**.
 
-    ![Screenshot of the powershell.](Images/upd-powershell.png)
+    ![Picture 1](../Media/upd-powershell.png)
       
 1. In PowerShell, run the below command to set the execution policy as unrestricted.
 
@@ -94,13 +94,13 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
    
    >**Note**: On the Welcome to Microsoft Edge page, select  **Start without your data**, on **Stay current with your browsing data** select **Confirm and continue** and on the help for importing Google browsing data page, select the  **Continue without this data**  button. Then, proceed to select  **Confirm and start browsing**  on the next page has a context menu.
     
-    ![Screenshot of the powershellscript.](Images/upd-package.png)
+    ![Picture 1](../Media/upd-package.png)
      
  1. Close the AzureArcVM, navigate to the Azure portal go back to the **Azure Arc** page, select **Machines (1)** under **Infrastructure** and now verify that a server is connected successfully **(2)**.
 
     **Note:** The name of the new server added could be different. You might have to refresh to see the new server.
     
-    ![Screenshot of the server added.](Images/HOL3E1S17.png)
+    ![Picture 1](../Media/secure5.png)
      
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
