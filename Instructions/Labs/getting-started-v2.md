@@ -14,17 +14,16 @@ This lab is designed to equip participants with hands-on experience in using Azu
 - **Enable Microsoft Defender for Cloud**: Configure security monitoring and threat protection by setting up a Subscription, creating a Log Analytics Workspace, enabling Microsoft Defender for Cloud, installing Azure Arc on an on-premises server, and implementing security measures to protect it.
 - **Mitigate threats using Microsoft Defender for Cloud**: Enhance security and compliance awareness by exploring regulatory compliance, assessing security posture and recommendations, and mitigating security alerts effectively.
 - **Connect data to Microsoft Sentinel using data connectors**: Access the Microsoft Sentinel workspace and integrate key security data sources by connecting Microsoft Entra ID, Entra ID Protection, Microsoft Defender for Cloud, and Azure Activity connectors.
-- **Connect Windows devices to Microsoft Sentinel using data connectors**:
-
+- **Connect Windows devices to Microsoft Sentinel using data connectors**: Set up the Microsoft Defender XDR workspace and configure security monitoring by connecting both Azure and non-Azure Windows machines. Onboard a Windows device to Microsoft Defender for Endpoint to enhance threat protection and response.
+- **Connect Linux hosts to Microsoft Sentinel using data connectors**: Access the Microsoft Sentinel Workspace and connect a Linux host using the Common Event Format (CEF) connector. You will also connect another Linux host using the Syslog connector and configure facilities and severity levels for log collection.
+- **Connect Defender XDR to Microsoft Sentinel using data connectors**: Connect Microsoft Defender XDR to establish security monitoring and integrate it with Microsoft Sentinel to enhance threat detection, correlate intelligence, and automate response actions.
+- **Create queries for Microsoft Sentinel using Kusto Query Language (KQL)**: Set up Log Analytics and Sentinel workspaces, running KQL queries, and creating visualizations using KQL operators and multi-table queries.
 
 ## Prerequisites
 
-Participants should have: 
-
--
--
--
--
+- Basic knowledge of on-premises Hyper-V infrastructure
+- Familiarity with Security Information and Event Management (SIEM) concepts
+- Basic understanding of KQL syntax for querying and analyzing logs
 
 ## Architecture
 
