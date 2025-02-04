@@ -35,17 +35,15 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
      
    - Subscription: **Select your subscription**
     
-   - Resource group: **SmartHotelRG (1)**
+   - Resource group: **SmartHotelHostRG (1)**
   
    - Region: Select **<inject key="Region" enableCopy="false" />**
    
    - Operating system: **Windows (3)**
    
-   - Leave other values as default and Click on **Next (4)**
+   - Leave other values as default and Click on **Download and run script (4)**
 
         ![Screenshot of the resource details tab.](Images/HOL3E1S5.png "resource details tab")
-
-1. Under the **Tags** tab, leave the values as default and click on **Next**.
 
 1. Under the **Download and run script** tab, **copy (1)** the entire script and paste it into a notepad as it will be used in the further steps and then click on **Close (2)**.
 
@@ -69,7 +67,7 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
 
     ![Screenshot of Hyper-V Manager showing the connect button for the AzureArcVM.](Images/HOL3-EX1-S12.png "Connect to AzureArcVM")  
     
-1. Under Connect to AzureArcVM, click on **Connect** and then log into the VM with the **Administrator password**: **<inject key="SmartHotel Admin Password" />** (the login screen may pick up your local keyboard mapping, use the 'eyeball' icon to check).
+1. In the Connect to AzureArcVM pop-up, click on **Connect** and then log into the VM with the **Administrator password**: **<inject key="SmartHotel Admin Password" />** (the login screen may pick up your local keyboard mapping, use the 'eyeball' icon to check).
  
     ![Screenshot of the Connect to AzureArcVM.](Images/HOL3-EX1-S13.png)
     
@@ -82,6 +80,8 @@ In this exercise, you will deploy and configure the Azure Connected Machine agen
     ```
     Set-ExecutionPolicy -ExecutionPolicy unrestricted
     ```
+
+   > **Note:** Type **Y** when prompted.
 
 1. Now, run the whole script that you copied in the notepad earlier in step 7.
 
