@@ -1,4 +1,4 @@
-# Module 6 - Lab 1 - Exercise 2 - Connect Windows devices to Microsoft Sentinel using data connectors
+# Lab 05: Connect Windows devices to Microsoft Sentinel using data connectors
 
 ## Lab scenario
   
