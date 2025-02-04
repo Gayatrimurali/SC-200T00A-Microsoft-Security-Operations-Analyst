@@ -24,13 +24,11 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-1. Under *Cloud Security*, select **Regulatory compliance** in the portal menu.
+1. Under *Cloud Security*, select **Regulatory compliance (1)** in the portal menu. Select **Manage compliance standards (2)** on the toolbar.
 
-1. Select **Manage compliance standards** on the toolbar.
+1. Scroll down and select your subscription by expanding the Tenant Root Group.
 
-1. Select your subscription.
-
-1. On the left menu Under *Policy settings*, select **Security policies** in the portal menu.
+1. On the left pane, select **Security policies**.
 
 1. Review the "Microsoft security benchmark" available to you by default.
 
@@ -79,9 +77,7 @@ In this task, you'll load sample security alerts and review the alert details.
 In this lab, you have completed the following:
 
 - Explored Regulatory Compliance
-
 - Explored Security posture and recommendations
-
 - Mitigated security alerts
 
-## You have successfully completed the lab. 
+### You have successfully completed the lab. 
