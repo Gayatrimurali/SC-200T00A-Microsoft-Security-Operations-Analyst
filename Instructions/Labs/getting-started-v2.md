@@ -4,15 +4,17 @@
 
 ## Overview
 
+In this hands-on lab, you will explore security operations and hybrid cloud management using Microsoft security and monitoring tools. You will start by using Azure Migrate: Discovery and Assessment to onboard on-premises Hyper-V VMs to Azure Arc, enabling centralized management of hybrid environments. You will then enable Microsoft Defender for Cloud to enhance cloud workload protection and respond to security alerts. Moving to Microsoft Sentinel, you will integrate log data from multiple sources, including Microsoft 365, non-Azure VMs, network appliances, and Linux VMs using CEF and Syslog connectors. Additionally, you will connect Microsoft Defender XDR to Microsoft Sentinel for a unified security operations experience. Finally, you will use Kusto Query Language (KQL) to analyze log data, visualize insights, and conduct threat hunting.
 
 ## Objective
 
 This lab is designed to equip participants with hands-on experience in using Azure OpenAI to build powerful AI applications. By completing this lab, participants will learn to:
 
--
--
--
--
+- **Onboard Windows Servers to Azure Arc**: Onboard on-premises servers to Azure Arc-enabled servers for centralized management and governance.
+- **Enable Microsoft Defender for Cloud**: Configure security monitoring and threat protection by setting up a Subscription, creating a Log Analytics Workspace, enabling Microsoft Defender for Cloud, installing Azure Arc on an on-premises server, and implementing security measures to protect it.
+- **Mitigate threats using Microsoft Defender for Cloud**: Enhance security and compliance awareness by exploring regulatory compliance, assessing security posture and recommendations, and mitigating security alerts effectively.
+- **Connect data to Microsoft Sentinel using data connectors**: Access the Microsoft Sentinel workspace and integrate key security data sources by connecting Microsoft Entra ID, Entra ID Protection, Microsoft Defender for Cloud, and Azure Activity connectors.
+- **Connect Windows devices to Microsoft Sentinel using data connectors**:
 
 
 ## Prerequisites
