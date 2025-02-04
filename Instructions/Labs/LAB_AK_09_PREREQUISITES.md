@@ -84,7 +84,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/sc-200-8.png)
      
-1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
+1. Review the **Server details** and **Connectivity method** options. Keep the default values and select **Next** to get to the Tags tab.
 
      ![Picture 1](../Media/sc-200-9.png)
 
@@ -98,7 +98,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/l8e1-11.png)
    
-1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to the next step.
+1. In case you get a UAC prompt, enter **Administrator** for "Username" and **Passw0rd!** for "Password", else skip to the next step.
 
 1. Enter: **cd C:\Users\Administrator\Downloads**
 
