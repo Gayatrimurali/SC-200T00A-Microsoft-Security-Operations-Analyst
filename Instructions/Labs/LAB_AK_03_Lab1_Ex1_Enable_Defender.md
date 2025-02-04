@@ -63,9 +63,25 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
+1. Search for Virtual Machines in the search bar and select it.
+
+1. Select the WIN1-1590760 VM.
+
+1. Click on Connect.
+
+1. Click on **Download RDP file** and select **Keep** in the pop-up.
+
+1. Click on **Connect**.
+
+1. Navigate to the **Environment** Details tab and copy the password which is listed under **Resource Group: WIN-1**.
+
+1. Paste it in the login pop-up and click on **OK**.
+
+1. Click on **Yes**.
+
 1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
 
-1. Click on WIN1-XXXXX.
+1. Click on WIN1-<inject key="DeploymentID" enableCopy="false" />**.
 
 1. Select and right-click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
