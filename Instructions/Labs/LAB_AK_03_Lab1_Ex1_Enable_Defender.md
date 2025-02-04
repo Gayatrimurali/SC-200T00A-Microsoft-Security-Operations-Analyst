@@ -25,6 +25,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
+    ![Picture 1](../Media/secure6.png)
+
 1. Click on **+ Create** from the command bar.
 
 1. Provide the following details and click on **Review + Create (4)**:
@@ -32,6 +34,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
      - Resource group: Select **RG-Defender (1)**
      - Name: Provide **uniquenameDefender (2)**  
      - Region: Keep the **default (3)**
+
+          ![Picture 1](../Media/secure7.png)
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned.
 
@@ -41,19 +45,27 @@ In this task, you'll enable and configure Microsoft Defender for Cloud.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings (1)** and select your **Subscription (2)** by expanding the Tenant Group.
+1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings (1)** and select your **Subscription (2)** by expanding the Tenant Root Group.
+
+    ![Picture 1](../Media/secure8.png)
 
 1. Review the Azure resources that are now protected with the Defender for Cloud plans.
 
-    >**Important:** If all Defender plans are *Off*, select **Enable all plans**. Select the *Turn on the plan anyways* and then click on **OK**. Select **Save** at the top of the page and wait for the *"Defender plans (for your) subscription were saved successfully!"* notifications to appear.
+    >**Important:** If all Defender plans are *Off*, select **Enable all plans (1)**. Select the **Turn on the plan anyways (2)** and then click on **OK**. Select **Save (4)** at the top of the page and wait for the *"Defender plans (for your) subscription were saved successfully!"* notifications to appear.
+
+      ![Picture 1](../Media/secure9.png)
 
 1. Select the **Settings & monitoring** tab from the Settings area (next to Save).
 
+      ![Picture 1](../Media/secure11.png)
+
 1. Review the monitoring extensions. It includes configurations for Virtual Machines, Containers and Storage Accounts. Close the "Settings & monitoring" page by selecting the 'X' on the upper right of the page.
 
-1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings** and select the '>' to the left of your subscription.
+1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings (1)**.
 
-1. Select the **uniquenameDefender** Log Analytics workspace you created earlier to review the available options and pricing.
+1. Select the '>' to the left of your **subscription (2)** and select the **uniquenameDefender (3)** Log Analytics workspace you created earlier to review the available options and pricing.
+
+      ![Picture 1](../Media/secure12.png)
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
@@ -69,15 +81,27 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Click on **Connect** from the Connect dropdown.
 
+      ![Picture 1](../Media/secure13.png)
+
 1. Click on **Download RDP file** and select **Keep** in the pop-up.
+
+      ![Picture 1](../Media/secure14.png)
 
 1. Click on **Connect**.
 
+      ![Picture 1](../Media/secure15.png)
+
 1. Navigate to the **Environment** Details tab and copy the password which is listed under **Resource Group: WIN-1**.
 
-1. Paste it in the login pop-up and click on **OK**.
+      ![Picture 1](../Media/secure16.png)
+
+1. **Paste (1)** it in the login pop-up and click on **OK (2)**.
+
+      ![Picture 1](../Media/secure17.png)
 
 1. Click on **Yes**.
+
+      ![Picture 1](../Media/secure18.png)
 
 1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
 
@@ -91,7 +115,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
      > **Note:** To enable the clipboard Right-click on WIN1-xxxx and select Hyper-V Settings click on **enhanced session mode** and check the **use enhanced mode** click on apply Then restart your virtual machine, once vm starts you will get a configuration pop-up click on show more options and select local resources and make sure the clipboard is selected
 
-1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
+1. Open the Microsoft Edge browser and navigate to the Azure portal at `https://portal.azure.com`.
 
 1. In the **Sign in** dialog box, provide the credentials as listed below:
 
@@ -120,13 +144,17 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
   
    - Region: Select **EAST US**
    
-   - Operating system: **Windows (3)**
+   - Operating system: **Keep it as default**
 
-   - Leave other values as default and Click on **Download and run script (4)**
+   - Leave other values as default and Click on **Download and run script (3)**
+
+        ![Picture 1](../Media/secure20.png)
 
 1. Scroll down and select the **Download** button.
 
-   > **Note:** Select **Keep** when prompted in the pop-up.
+      ![Picture 1](../Media/secure21.png)
+
+     > **Note:** Select **Keep** when prompted in the pop-up.
 
 1. From the **Start (1)** menu of the AzureArcVM, search for **Windows Powershell (2)** and open it **(3)**.
 
@@ -164,7 +192,9 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Select **Refresh** until WINServer server name appears and the Status is *Connected*.
 
-    >**Note:** This could take a couple of minutes.
+      ![Picture 1](../Media/secure22.png)
+
+      > **Note:** This could take a couple of minutes.
 
 ### Task 4: Protect an On-Premises Server
 
@@ -183,15 +213,23 @@ In this task, you will manually install the required agent on the Windows Server
    - Keep the default region
    - Ensure the box for **Windows** is checked under Platform Type
 
+        ![Picture 1](../Media/secure24.png)
+
 1. In the **Resources** tab, click on **+ Add resources (1)**. In the **Select a scope** page, expand the *Scope* column for **RG-Defender**, then select **WINServer (Azure Arc) (2)** and select **Apply (3)**.
 
-    >**Note:** You may need to set the column filter for *Resource type* to *Server-Azure Arc* if **WINServer (Azure Arc)** is not displayed.
+      ![Picture 1](../Media/secure23.png)
+
+      > **Note:** You may need to set the column filter for *Resource type* to *Server-Azure Arc* if **WINServer (Azure Arc)** is not displayed.
 
 1. Click on **Next: Collect and deliver**
 
 1. In the **Collect and deliver** tab, select **+ Add data source (1)**. In the **Add a data source** page, select **Performance Counters (2)** from *Data source type*.
 
+      ![Picture 1](../Media/secure25.png)
+
 1. Click the **Destination** tab, select **+ Add Destination (1)**. Select **Azure Monitor Logs (2)** in the **Destination Type** dropdown. Select your **workspace (3)** from the drop down. Click on **Add data source (4)**.
+
+      ![Picture 1](../Media/secure26.png)
 
 1. Click on **Review + Create** and select **Create** after *Validation passed* is displayed.
 
@@ -201,9 +239,11 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select the **WINServer** which is associated with the **RG-Defender** resource group.
 
-1. Select **Extensions** from the left pane under Settings.
+      ![Picture 1](../Media/secure27.png)
 
-1. The **AzureMonitorWindowsAgent** should be listed with a *Status* of **Succeeded**.
+1. Select **Extensions (2)** from the left pane under Settings. The **AzureMonitorWindowsAgent (2)** should be listed with a *Status* of **Succeeded**.
+
+      ![Picture 1](../Media/secure28.png)
 
 ### Summary
 
