@@ -1,6 +1,6 @@
 # Secure Windows Servers Azure Arc & Microsoft Defender
 
-**Overall Estimated Duration: 8 hours**
+### Overall Estimated Duration: 8 hours
 
 ## Overview
 
