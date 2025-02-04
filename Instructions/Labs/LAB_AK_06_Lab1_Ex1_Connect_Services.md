@@ -16,41 +16,16 @@ After completing this lab, you will be able to integrate log data from various d
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex1.png)
 
-### Task 1: Access the Microsoft Sentinel Workspace
 
- In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud and you will access your Microsoft Sentinel workspace.  
+### Task 1: Connect the Microsoft Entra ID connector
 
- 1. Open the Microsoft Edge browser.
+ In this task, you will connect the Microsoft Entra ID connector to Microsoft Sentinel.
 
- 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
- 1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select **Next**.
-
- 1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
- 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
-
- 1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
-
- 1. Select **+Create** from the command bar.
-
- 1. Select Resource Group **RG-Defender**  from the drop down.
-
- 1. For the Name, enter **uniquenameDefender**.
-
- 1. Select **Review + Create**.
-
- 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
- 
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
  1. Select **+Create** from the command bar.
 
- 1. Select the newly created workspace and click on **Add**
-
-### Task 2: Connect the Microsoft Entra ID connector
-
- In this task, you will connect the Microsoft Entra ID connector to Microsoft Sentinel.
+ 1. Select **uniquenameDefender** and click on **Add**.
 
  1. On the left side menu, in the Configuration area select **Data connectors**.
  
@@ -62,7 +37,7 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. Check and click on the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
-### Task 3: Connect the Microsoft Entra ID Protection connector
+### Task 2: Connect the Microsoft Entra ID Protection connector
 
 In this task, you will connect the Microsoft Entra ID Protection connector to Microsoft Sentinel.
 
@@ -74,14 +49,7 @@ In this task, you will connect the Microsoft Entra ID Protection connector to Mi
 
 1. From the **Configuration** area select the **Connect** button.
 
- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    - If you receive a success message, you can proceed to the next task.
-    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
- <validation step="15254bc0-c312-424f-aa2c-9e30d0101a0d" />
-
-### Task 4: Connect the Microsoft Defender for Cloud connector
+### Task 3: Connect the Microsoft Defender for Cloud connector
 
 In this task, you will connect the Microsoft Defender for Cloud connector.
  
@@ -97,7 +65,7 @@ In this task, you will connect the Microsoft Defender for Cloud connector.
 
 1. The **Status** should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
 
-### Task 5: Connect the Azure Activity connector
+### Task 4: Connect the Azure Activity connector
 
 In this task, you will connect the Azure Activity connector.
 1. In the Data Connectors page, click on content hub search for **Azure Activity**, and select and install it
@@ -118,7 +86,8 @@ In this task, you will connect the Azure Activity connector.
 
 1. Select **Create** to finish.
 
-### Review
+## Summary
+
 In this lab, you have integrated log data from various data sources within the organization into Microsoft Sentinel using appropriate data connectors.
 
-## Proceed to Exercise 2
+### You have successfully completed the lab!
