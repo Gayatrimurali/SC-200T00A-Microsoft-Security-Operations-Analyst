@@ -72,7 +72,7 @@ In this task, you'll load sample security alerts and review the alert details.
 
     - Review the *Take action* information. Notice the sections available to take action depending on the type of alert: Inspect resource context, Mitigate the threat, Prevent future attacks, Trigger automated response and Suppress similar alerts.
 
-## Review
+## Summary
 
 In this lab, you have completed the following:
 
@@ -80,4 +80,4 @@ In this lab, you have completed the following:
 - Explored Security posture and recommendations
 - Mitigated security alerts
 
-### You have successfully completed the lab. 
+### You have successfully completed the lab!
