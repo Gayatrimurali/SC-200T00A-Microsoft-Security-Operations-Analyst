@@ -1,5 +1,6 @@
 # Lab 07: Connect Defender XDR to Microsoft Sentinel using data connectors
 
+## Estimated timing: 40 minutes
 ## Lab scenario
 
 ![Lab overview.](../Media/23-05-2024.png)
@@ -45,6 +46,7 @@ In this task, you deploy the Microsoft Defender XDR connector.
     >- Go to **Environment Settings** under **Management** and select your subscription.
     >- GO to **Defender plans** and click on **settings** under **Partial** in **Defender CSPM**.
     >- Turn **ON** the option next to **Permission Management (CIEM)** and click on **Continue** on top of the page.
+    >- Click on **Save** on the **Settings | Defender Plans** page.
 
     >**Note:** If you are not able to see the **Connect Incident & alrets button**, wait for some time. It might take 25-30 minutes to show.
 
