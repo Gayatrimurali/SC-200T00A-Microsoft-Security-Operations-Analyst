@@ -23,17 +23,26 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
+    ![Picture 1](../Media/L4T1S1-0502.png)
+
  1. Select **+Create** from the command bar.
 
  1. Select **uniquenameDefender** and click on **Add**.
 
+    ![Picture 1](../Media/L4T1S3-0502.png)
+
  1. On the left side menu, in the Configuration area select **Data connectors**.
  
  1. In the Data Connectors page, click on **content hub** and search for **Microsoft Entra ID** and select and install it.
+
+    ![Picture 1](../Media/L4T1S5-0502.png)
+    ![Picture 1](../Media/L4T1S5.1-0502.png)
    
  1. Go back to data connector page and search for the **Microsoft Entra ID** connector and select it from the list.
 
  1. Navigate back to the **Data connectors** page and select the **Open connector page** on the connector information blade.
+
+    ![Picture 1](../Media/L4T1S7-0502.png)
 
  1. Check and click on the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
@@ -42,10 +51,14 @@ After completing this lab, you will be able to integrate log data from various d
 In this task, you will connect the Microsoft Entra ID Protection connector to Microsoft Sentinel.
 
 1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID Protection** and select and **install** it.
+
+    ![Picture 1](../Media/L4T2S1-0502.png)
  
 1. From the Data Connectors Tab, search for the **Microsoft Entra ID Protection** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
+
+    ![Picture 1](../Media/L4T2S2-0502.png)
 
 1. From the **Configuration** area select the **Connect** button.
 
@@ -54,6 +67,8 @@ In this task, you will connect the Microsoft Entra ID Protection connector to Mi
 In this task, you will connect the Microsoft Defender for Cloud connector.
  
 1. In the Data Connectors page, click on content hub and search for **Microsoft Defender for Cloud** and select and **install** it.
+
+    ![Picture 1](../Media/L4T3S1-0502.png)
  
 1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
 
@@ -61,18 +76,26 @@ In this task, you will connect the Microsoft Defender for Cloud connector.
 
 1. Select the **Subscription-based Microsoft Defender for Cloud (Legacy)** Data connector, and select the **Open connector page** on the connector information blade.
 
+    ![Picture 1](../Media/L4T3S3-0502.png)
+
 1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
 
 1. The **Status** should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
+
+    ![Picture 1](../Media/L4T3S5-0502.png)
 
 ### Task 4: Connect the Azure Activity connector
 
 In this task, you will connect the Azure Activity connector.
 1. In the Data Connectors page, click on content hub search for **Azure Activity**, and select and install it
 
+    ![Picture 1](../Media/L4T4S1-0502.png)
+
 1. From the Data Connectors Tab, search for the **Azure Activity** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
+
+    ![Picture 1](../Media/L4T4S3-0502.png)
 
 1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
