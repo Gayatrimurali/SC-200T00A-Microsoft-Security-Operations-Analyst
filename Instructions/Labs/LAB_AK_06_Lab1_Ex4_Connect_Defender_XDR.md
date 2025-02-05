@@ -1,6 +1,7 @@
 # Lab 07: Connect Defender XDR to Microsoft Sentinel using data connectors
 
-## Estimated timing: 40 minutes
+## Estimated Duration: 40 minutes
+
 ## Lab scenario
 
 ![Lab overview.](../Media/23-05-2024.png)
@@ -8,6 +9,10 @@
 You're a Security Operations Analyst working at a company that deployed both Microsoft Defender XDR and Microsoft Sentinel. You need to prepare for the Unified Security Operations Platform connecting Microsoft Sentinel to Defender XDR. Your next step will be to install the Defender XDR Content Hub solution and deploy the Defender XDR data connector to Microsoft Sentinel.
 
 >**Important:** Be aware that there are capability differences between the azure Microsoft Sentinel portal and Sentinel in the Microsoft Defender XDR portal **[Portal capability differences](https://learn.microsoft.com/azure/sentinel/microsoft-sentinel-defender-portal#capability-differences-between-portals)**.
+
+## Lab Objectives
+
+- Task 1: Connect Defender XDR
 
 ### Task 1: Connect Defender XDR
 
@@ -96,4 +101,8 @@ In this task, you'll connect a Microsoft Sentinel workspace to Microsoft Defende
 
  >**Note:** Some features may not be available in the public preview, and the user interface may differ from the lab instructions. Also, the synchronization between Microsoft Sentinel and Microsoft Defender XDR may take a few minutes to complete, so you may not see all the installed *Data connectors* for example.
 
-## You have successfully completed the lab
+## Summary
+
+In this lab, you have connected Defender XDR.
+
+## You have successfully completed the lab!
