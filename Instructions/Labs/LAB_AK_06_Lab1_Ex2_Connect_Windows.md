@@ -39,9 +39,13 @@ In this task, you will create a Windows virtual machine in Azure.
   
     **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
 
- 1. In the **Search services and marketplace** box, enter ***Windows 10*** and select **Microsoft Window 10** from the drop-down list.
+ 1. In the **Search services and marketplace** box, enter ***Windows 10*** and select **Microsoft Window 10** from the options below.
+
+    ![Picture 1](../Media/L5T2S6-0502.png)
 
  1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 22H2**. Select **Start with a pre-set configuration** to continue.
+
+    ![Picture 1](../Media/L5T2S7-0502.png)
  
  1. On **Choose recommended defaults that match your workload**  page select **Continue to Create a VM**
 
@@ -76,18 +80,20 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
  1. Select **Data Connector** from configuration area.
  
  1. Go to content hub and search for **Windows Security Events** and Install.
+
+    ![Picture 1](../Media/L5T3S4-0502.png)
  
  1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
 
+    ![Picture 1](../Media/L5T3S6-0502.png)
+
  1. In the Configuration section, select the **+Create data collection rule.**
 
- 1. Enter **AZWIN01DCR** for Rule Name, then select Next: Resources.
+ 1. Enter **AZWIN01DCR** for Rule Name, and select **RG-AZWIN01** as Resour e group, then select Next: Resources.
 
  1. Expand **Subcription** then expand **RG-AZWIN01**, then select AZWIN01.
-
- 1. Select **Apply**.
 
  1. Select **Next: Collect**, then **Next: Review + create.**
 
