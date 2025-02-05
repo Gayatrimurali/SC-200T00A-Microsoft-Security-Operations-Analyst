@@ -1,5 +1,7 @@
 # Lab 08: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
 
+### Estimated Duration: 90 minutes
+
 ## Lab scenario
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
 
@@ -15,8 +17,6 @@ You are a Security Operations Analyst working at a company that is implementing 
 - Task 5: Create visualizations in KQL with the Render Operator
 - Task 6: Build multi-table statements in KQL
 - Task 7: Work with string data in KQL
-
-## Estimated timing: 90 minutes
 
 ## Architecture Diagram
 
@@ -485,4 +485,4 @@ In this lab, you have completed the following:
 - Build multi-table statements in KQL
 - Work with string data in KQL
 
-## You have successfully completed the lab.
+## You have successfully completed the lab!
