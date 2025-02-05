@@ -245,7 +245,7 @@ In this task, you will manually install the required agent on the Windows Server
 
       ![Picture 1](../Media/secure28.png)
 
-### Summary
+## Summary
 
 In this lab, you have completed the following:
 
