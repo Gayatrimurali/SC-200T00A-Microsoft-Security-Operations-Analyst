@@ -28,9 +28,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. Scroll down and select your subscription by expanding the Tenant Root Group.
 
-1. On the left pane, select **Security policies**.
-
-1. Review the "Microsoft security benchmark" available to you by default.
+1. On the left pane, select **Security policies (1)**. Review the **Microsoft security benchmark (2)** available to you by default.
 
 1. Select Microsoft Defender for Cloud below the search box to return to the main blade.
 
@@ -52,15 +50,13 @@ In this task, you'll load sample security alerts and review the alert details.
 
 1. Under *General*, select **Security alerts** in the portal menu.
 
-1. Select **Sample alerts** from the command bar. **Hint:** you may need to select the ellipsis (...) button from the command bar.
+1. Select **Sample alerts** from the command bar. 
 
-1. In the Create sample alerts (Preview) pane make sure your subscription is selected and that all sample alerts are selected in the *Defender for Cloud plans* area.
-
-1. Select **Create sample alerts**.  
+1. In the Create sample alerts (Preview) pane, make sure your **subscription (1)** is selected, all **sample alerts (2)** are selected in the *Defender for Cloud plans* area and click on **Create sample alerts (3)**.  
 
     >**Note:** This sample alert creation process may take a few minutes to complete, wait for the *"Successfully created sample alerts"* notification.
 
-1. Once completed, select **Refresh** (if needed) to see the alerts appear under the *Security alerts* area.
+1. Once completed, select **Refresh** to see the alerts appear under the *Security alerts* area.
 
 1. Choose an interesting alert with a *Severity* of *High* and perform the following actions:
 
