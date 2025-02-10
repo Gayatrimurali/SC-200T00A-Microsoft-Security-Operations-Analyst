@@ -24,11 +24,19 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
+    ![Picture 1](../Media/secure30.png)
+
 1. Under *Cloud Security*, select **Regulatory compliance (1)** in the portal menu. Select **Manage compliance standards (2)** on the toolbar.
+
+    ![Picture 1](../Media/secure29.png)
 
 1. Scroll down and select your subscription by expanding the Tenant Root Group.
 
+    ![Picture 1](../Media/secure31.png)
+
 1. On the left pane, select **Security policies (1)**. Review the **Microsoft security benchmark (2)** available to you by default.
+
+    ![Picture 1](../Media/secure32.png)
 
 1. Select Microsoft Defender for Cloud below the search box to return to the main blade.
 
@@ -38,9 +46,13 @@ In this task, you will review cloud security posture management. The Secure Scor
 
 1. On the left menu Under *Cloud Security*, select **Security posture** in the portal menu.
 
+    ![Picture 1](../Media/secure33.png)
+
 1. The Secure score most likely will show *N/A* until the score is calculated.
 
 1. Under *General*, select **Recommendations** in the portal menu.
+
+    ![Picture 1](../Media/secure34.png)
 
 1. Explore the Recommendations provided (after 24 hours).
 
@@ -54,7 +66,9 @@ In this task, you'll load sample security alerts and review the alert details.
 
 1. In the Create sample alerts (Preview) pane, make sure your **subscription (1)** is selected, all **sample alerts (2)** are selected in the *Defender for Cloud plans* area and click on **Create sample alerts (3)**.  
 
-    >**Note:** This sample alert creation process may take a few minutes to complete, wait for the *"Successfully created sample alerts"* notification.
+    ![Picture 1](../Media/secure35.png)
+
+      > **Note:** This sample alert creation process may take a few minutes to complete, wait for the *"Successfully created sample alerts"* notification.
 
 1. Once completed, select **Refresh** to see the alerts appear under the *Security alerts* area.
 
