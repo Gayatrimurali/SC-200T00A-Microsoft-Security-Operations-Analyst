@@ -75,7 +75,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. In the Search bar of the Azure portal, Search for **Virtual Machines** and select it.
+1. In the Search bar of the Azure portal, search for **Virtual Machines** and select it.
 
 1. Select the **WIN1-<inject key="DeploymentID" enableCopy="false" />** VM.
 
