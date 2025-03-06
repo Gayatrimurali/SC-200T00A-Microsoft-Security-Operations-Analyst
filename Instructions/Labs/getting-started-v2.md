@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this hands-on lab, you will explore security operations and hybrid cloud management using Microsoft security and monitoring tools. You will start by using Azure Migrate: Discovery and Assessment to onboard on-premises Hyper-V VMs to Azure Arc, enabling centralized management of hybrid environments. You will then enable Microsoft Defender for Cloud to enhance cloud workload protection and respond to security alerts. Moving to Microsoft Sentinel, you will integrate log data from multiple sources, including Microsoft 365, non-Azure VMs, network appliances, and Linux VMs using CEF and Syslog connectors. Additionally, you will connect Microsoft Defender XDR to Microsoft Sentinel for a unified security operations experience. Finally, you will use Kusto Query Language (KQL) to analyze log data, visualize insights, and conduct threat hunting.
+In this hands-on lab, you will explore security operations and hybrid cloud management using Microsoft security and monitoring tools. You will start by onboarding on-premises Hyper-V VMs to Azure Arc, enabling centralized management of hybrid environments. You will then enable Microsoft Defender for Cloud to enhance cloud workload protection and respond to security alerts. Moving to Microsoft Sentinel, you will integrate log data from multiple sources, including Microsoft 365, non-Azure VMs, network appliances, and Linux VMs using CEF and Syslog connectors. 
 
 ## Objective
 
@@ -13,11 +13,8 @@ This lab is designed to equip participants with hands-on experience in using Azu
 - **Onboard Windows Servers to Azure Arc**: Onboard on-premises servers to Azure Arc-enabled servers for centralized management and governance.
 - **Enable Microsoft Defender for Cloud**: Configure security monitoring and threat protection by setting up a Subscription, creating a Log Analytics Workspace, enabling Microsoft Defender for Cloud, installing Azure Arc on an on-premises server, and implementing security measures to protect it.
 - **Mitigate threats using Microsoft Defender for Cloud**: Enhance security and compliance awareness by exploring regulatory compliance, assessing security posture and recommendations, and mitigating security alerts effectively.
-- **Connect data to Microsoft Sentinel using data connectors**: Access the Microsoft Sentinel workspace and integrate key security data sources by connecting Microsoft Entra ID, Entra ID Protection, Microsoft Defender for Cloud, and Azure Activity connectors.
 - **Connect Windows devices to Microsoft Sentinel using data connectors**: Set up the Microsoft Defender XDR workspace and configure security monitoring by connecting both Azure and non-Azure Windows machines. Onboard a Windows device to Microsoft Defender for Endpoint to enhance threat protection and response.
 - **Connect Linux hosts to Microsoft Sentinel using data connectors**: Access the Microsoft Sentinel Workspace and connect a Linux host using the Common Event Format (CEF) connector. You will also connect another Linux host using the Syslog connector and configure facilities and severity levels for log collection.
-- **Connect Defender XDR to Microsoft Sentinel using data connectors**: Connect Microsoft Defender XDR to establish security monitoring and integrate it with Microsoft Sentinel to enhance threat detection, correlate intelligence, and automate response actions.
-- **Create queries for Microsoft Sentinel using Kusto Query Language (KQL)**: Set up Log Analytics and Sentinel workspaces, running KQL queries, and creating visualizations using KQL operators and multi-table queries.
 
 ## Prerequisites
 
@@ -27,19 +24,7 @@ This lab is designed to equip participants with hands-on experience in using Azu
 
 ## Architecture
 
-
-## Architecture Diagram
-
-
-
-## Explanation of Components
-
-The architecture for this lab involves several key components:
-
--
--
--
--
+In this hands-on lab, you will implement a comprehensive security and hybrid cloud management architecture leveraging Microsoft security and monitoring tools. The workflow begins with onboarding on-premises Hyper-V VMs to Azure Arc, extending Azure’s management capabilities to hybrid and multi-cloud environments. This enables centralized governance, policy enforcement, and security monitoring across on-premises and cloud resources. Next, you will activate Microsoft Defender for Cloud, which provides security posture management and threat protection, continuously assessing workloads and generating security alerts based on detected vulnerabilities or threats. To enhance security operations, you will integrate Microsoft Sentinel, a cloud-native SIEM and SOAR solution, to collect, correlate, and analyze log data from diverse sources, including Microsoft 365, non-Azure VMs, network appliances, and Linux VMs. This integration is facilitated using CEF (Common Event Format) and Syslog connectors, enabling the ingestion of security events and logs from heterogeneous environments. By combining these tools, you will establish a proactive security posture, leveraging AI-driven threat intelligence, automated incident response, and centralized visibility into security events across your hybrid infrastructure.
 
 ## Getting started with the lab
  
