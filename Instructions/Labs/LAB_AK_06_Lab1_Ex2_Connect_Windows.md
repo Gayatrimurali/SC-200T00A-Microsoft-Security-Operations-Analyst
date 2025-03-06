@@ -27,39 +27,23 @@
 
 In this task, you will create a Windows virtual machine in Azure.  
 
- 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
- 1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select **Next**.
-
- 1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
- 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+ 1. Navigate back to `https://portal.azure.com`.
 
  1. Select **+ Create a Resource**. 
-  
-    **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
 
  1. In the **Search services and marketplace** box, enter ***Windows 10*** and select **Microsoft Window 10** from the options below.
 
-    ![Picture 1](../Media/L5T2S6-0502.png)
+ 1. Ensure **Windows 10 Enterprise, version 22H2** and **Start with a pre-set configuration** is selected and click on **Create**.
 
- 1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 22H2**. Select **Start with a pre-set configuration** to continue.
+ 1. On **Create a virtual machine** page, select the following:
 
-    ![Picture 1](../Media/L5T2S7-0502.png)
- 
- 1. On **Choose recommended defaults that match your workload**  page select **Continue to Create a VM**
-
- 1. On **Create a virtual machine** page, select resource group **RG-AZWIN01** from the drop down.
-
-    >**Note:** This will be a new resource group for tracking purposes. 
-
-  1. In the Virtual machine name, enter **AZWIN01.**
-
-  1. Leave the default value for **Region**.
-
-  1. Scroll down and review the **Size** for the virtual machine it should be selected as **Standard_B2s**. If it appears empty, select **See all sizes**, choose the **Standard_DS1_v2** click **Select**.
-
-  1. Enter a **Username** as **azureuser**.
+    - Resource group: **RG-AZWIN01 (1)**
+    - Virtual machine: **AZWIN01 (2)**
+    - Region: Set as default.
+    - Size: Click on **see all sizes (1)**, search and select **B2S (2)**.
+    - Username: **azureuser (3)**
+  
+  1. Enter a **** as .
 
   1. Enter a **Password** as **Password.1!!**
 
@@ -131,7 +115,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. On the left side navigation pane under **Azure Arc resources** select **Machines**
 
- 1. Select **+ Add a machine**.
+ 1. Click on **Add/Create** and click on **Add a Machine**.
 
  1. Select **Generate script** in the "Add a single server" section.
 
@@ -139,9 +123,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select **Next** to get to the Resource details tab.
 
- 1. Select the Resource group **rg-defender**
-
-    >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
+ 1. Select the Resource group **G-Defender**.
  
  1. Select a **east us** region  
 
