@@ -1,4 +1,4 @@
-# Lab 06: Connect Linux hosts to Microsoft Sentinel using data connectors
+# Lab 05: Connect Linux hosts to Microsoft Sentinel using data connectors
 
 ### Estimated Duration: 40 minutes
 
