@@ -78,8 +78,12 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    * Password: <inject key="AzureAdUserPassword"></inject>
    
      ![](../Media/sc900-image-2.png)
-     
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
+
+1. If you see the pop-up Action Required, click Ask Later.
+
+     ![](../Media/asklater.png)     
+ 
+    >**NOTE:** Do not enable MFA, select **Ask Later**.
      
 1. If prompted to **stay signed in**, you can click **"No"**.
  
