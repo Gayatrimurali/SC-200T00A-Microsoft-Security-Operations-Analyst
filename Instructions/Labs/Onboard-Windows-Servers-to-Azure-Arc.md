@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you will use Azure Migrate: Discovery and assessment tool that describes how to onboard on-premises Hyper-V VMs to Azure Arc for Azure Management.
+In this lab, you will onboard on-premises Hyper-V VMs to Azure Arc for Azure Management.
 
 Azure Arc allows you to manage your hybrid IT estate with a single pane of glass by extending the Azure management experience to your on-premises servers that are not ideal candidates for migration. 
 
