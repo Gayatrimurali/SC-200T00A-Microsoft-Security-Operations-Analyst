@@ -16,7 +16,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
+  ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3-1.png)
 
 ## Task 1: Connect a Linux Host using the Common Event Format connector
 
