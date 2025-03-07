@@ -1,239 +1,307 @@
-# Lab 05: Connect Windows devices to Microsoft Sentinel using data connectors
+# Lab 04: Connect Windows devices to Microsoft Sentinel using data connectors
 
-## Lab scenario
-  
- You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data is Windows virtual machines inside and outside of Azure, like On-Premises environments or other Public Clouds.
+### Estimated Duration: 30 minutes
 
-## Lab objective
- In this lab, you will connect to Windows virtual machines, both within and outside of Azure, to Microsoft Sentinel using data connectors.
+## Lab Scenario
 
-## Estimated timing: 40 minutes
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data is Windows virtual machines inside and outside of Azure, like On-Premises environments or other Public Clouds.
+
+  >**Important:** The lab exercises for Learning Path #8 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+
+## Lab Objectives
+ In this lab, you will perform the following:
+ 
+- Task 1: Create a Microsoft Sentinel Workspace
+- Task 2: Create a Windows Virtual Machine in Azure
+- Task 3: Install Azure Arc on an On-Premises Server
+- Task 4: Connect an Azure Windows virtual machine
+- Task 5: Connect a non-Azure Windows Machine
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex2.png)
- 
-### Task 1: Preparing the Microsoft Defender XDR workspace
+![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
 
-1. On the **Microsoft Defender XDR** (https://security.microsoft.com) portal, from the navigation menu, select **Settings** from the left.
+## Task 1: Create a Microsoft Sentinel Workspace
 
-1. On the **Settings** page select **Microsoft Defender XDR**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+  > **Note:** Perform this task in **SmartHotelHost** VM (Jump VM) 
 
-    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
-
-1. When the new space completes successfully, you are going to see the Microsoft Defender XDR settings for Account, Email notifications, Preview features and Streaming API.
-
-### Task 2: Create a Windows Virtual Machine in Azure
-
-In this task, you will create a Windows virtual machine in Azure.  
-
- 1. Navigate back to `https://portal.azure.com`.
-
- 1. Select **+ Create a Resource**. 
-
- 1. In the **Search services and marketplace** box, enter ***Windows 10*** and select **Microsoft Window 10** from the options below.
-
- 1. Ensure **Windows 10 Enterprise, version 22H2** and **Start with a pre-set configuration** is selected and click on **Create**.
-
- 1. On **Create a virtual machine** page, select the following:
-
-    - Resource group: **RG-AZWIN01 (1)**
-    - Virtual machine: **AZWIN01 (2)**
-    - Region: Set as default.
-    - Size: Click on **see all sizes (1)**, search and select **B2S (2)**.
-    - Username: **azureuser (3)**
-  
-  1. Enter a **** as .
-
-  1. Enter a **Password** as **Password.1!!**
-
-  1. Scroll down to the bottom of the page and select the checkbox below **Licensing** to confirm you have the eligible license.
-
-  1. Select **Review + create** and wait until the validation is passed.
-
-  1. Select **Create**. Wait for the Resource to be created, this may take a few minutes.
-
-### Task 3: Connect an Azure Windows virtual machine
-
-In this task, you will connect an Azure Windows virtual machine to Microsoft Sentinel.
-
- 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
- 1. Select the Microsoft Sentinel Workspace you created earlier.
-
- 1. Select **Data Connector** from configuration area.
- 
- 1. Go to content hub and search for **Windows Security Events** and Install.
-
-    ![Picture 1](../Media/L5T3S4-0502.png)
- 
- 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
-
- 1. Select the **Open connector page** on the connector information blade.
-
-    ![Picture 1](../Media/L5T3S6-0502.png)
-
- 1. In the Configuration section, select the **+Create data collection rule.**
-
- 1. Enter **AZWIN01DCR** for Rule Name, and select **RG-AZWIN01** as Resour e group, then select Next: Resources.
-
- 1. Expand **Subcription** then expand **RG-AZWIN01**, then select AZWIN01.
-
- 1. Select **Next: Collect**, then **Next: Review + create.**
-
- 1. Select **Create.**
-
- 1. Wait a minute and then select **Refresh** to see the new data collection rule listed.
-
-### Task 4: Connect a non-Azure Windows Machine
-
-In this task, you will install Azure Arc and connect a non-Azure Windows virtual machine to Microsoft Sentinel.  
-
-   >**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
-
-   >**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
-
- 1. In the lab virtual machine, search for **Hyper-V Manager** from the bottom windows search bar and select to open.
-
- 1. Select and right-click on the **WIN2** virtual machine and select start click on **Continue**, then again right-click on the **WIN2** virtual machine and select **connect**.
- 
- 1. Inside **WIN2** Click on **connect**
-
- 1. Enter the **Password** as `Password.1!!` when prompted.
-
- 1. Open the Microsoft Edge browser inside **WIN2**.
-
- 1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
-
- 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
- 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
-
- 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
-
- 1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
-
- 1. On the left side navigation pane under **Azure Arc resources** select **Machines**
-
- 1. Click on **Add/Create** and click on **Add a Machine**.
-
- 1. Select **Generate script** in the "Add a single server" section.
-
-     ![Picture 1](../Media/SC-200-module6-ex2-img4.png)
-
- 1. Select **Next** to get to the Resource details tab.
-
- 1. Select the Resource group **G-Defender**.
- 
- 1. Select a **east us** region  
-
- 1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
-
- 1. Select **Next** to get to the Download and run script tab.
-
- 1. Scroll down and select the **Download** button. **Hint:** if your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**. 
-
- 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
-
-     ![Picture 1](../Media/SC-200-module6-ex2-img5.png)
-
-     >**Note:** You may need to search for **Windows PowerShell**. In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
-
- 1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to the next step.
-
- 1. Enter: **cd C:\Users\Administrator\Downloads**
-
- 1. Type **Set-ExecutionPolicy -ExecutionPolicy Unrestricted** and press enter.
-
- 1. Enter **A** for Yes to All and press enter.
-
- 1. Type **.\OnboardingScript.ps1** and press enter.  
-
-    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WIN2 virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
-
- 1. Enter **R** to Run once and press enter (this may take a couple of minutes).
-
- 1. The setup process will open a new Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
-
- 1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
-
- 1. Select **Refresh** until **WIN-xxxx** name appears.
-
-    >**Note:** This could take a few minutes.
+In this task, you will connect the Microsoft Entra ID connector to Microsoft Sentinel.
 
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
- 1. Select the Microsoft Sentinel Workspace you created earlier.
- 
- 1. Go to the content hub search for **Windows Security Events** and click on install. Then go to the data connector page and refresh you should find **Windows Security Events via AMA**
+    ![Picture 1](../Media/L4T1S1-0502.png)
 
- 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
+ 1. Select **+Create** from the command bar.
 
- 1. Select the **Open connector page** on the connector information blade.
+ 1. Select **uniquenameDefender** and click on **Add**.
 
- 1. In the **Configuration** section, select the **+Create data collection rule**.
+    ![Picture 1](../Media/L4T1S3-0502.png)
 
- 1. Enter **WIN2** for Rule Name, then select **Next: Resources**.
+## Task 2: Create a Windows Virtual Machine in Azure
 
- 1. Expand **Subcription** then expand **rg-defender** (or the Resource Group you are created), then select **WIN-xxxx**.
+  > **Note:** Perform this task in **SmartHotelHost** VM (Jump VM) 
 
- 1. Select **Apply**.
+In this task, you'll create a Windows virtual machine in Azure.
 
- 1. Select **Next: Collect**, then **Next: Review + create**.
+1. In the azure portal, Select **+ Create a Resource**. 
 
- 1. Select **Create**.
+    ![](../Media/l8e1-1.png)
 
-1. Wait a few minutes and then select **Refresh** to see the new data collection rule listed.
+1. In the **Search services and marketplace** box, enter **Windows 10 (1)** and select **Microsoft Window 10 (2)** from the drop-down list.
 
-### Task 5: Onboard Microsoft Defender for Endpoint Device
+    ![](../Media/l8e1-2.png)
 
- In this task, you will onboard a device to Microsoft Defender for Endpoint.
+1. On the **Marketplace** page,  Select the box for **Microsoft Window 10**.
 
- >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
+    ![](../Media/l8e1-3.png)
 
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
+1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 22H2 (1)**.
 
-1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
+1. Select **Start with a pre-set configuration (2)** to continue.
 
-      >**Note:** If you do not see the **Endpoints** option under **Settings**, log out by selecting the top-right circle with your account initials and selecting **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Username** and **Password** Provided on the environment details page. It will take 30-35 minutes to reflect you can proceed with the next exercise until **Endpoints** are visible and then perform this task.
-      
-      >**Note:** You have to keep checking after each 10-15 mins so that you don't miss this task.
+   ![](../Media/l8e1-4.png)
 
-1. Select **Onboarding** in the Device Management section.
+1. Select **Dev/Test** and then select **Continue to create a VM**.
 
-1. In the **Select operating system to start onboarding process:** are make sure **Windows Server 2019 and 2022** is displayed.
+   ![](../Media/l8e1-5.png)
 
-1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+1. On **Create a virtual machine** page, configure the disk and then select **Review + create (11)**. 
 
-1. Under the *Downloads* pop-ipup, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**. 
-  
-    >**Hint:** In case you don't see it, the file should be in the downloads of **WIN01** file explorer.
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | your default subscription **(1)** | 
+    | Resource Group | Select **RG-AZWIN01 (2)**   |
+    | Virtual machine name |  Enter **AZWIN01 (3)**  | 
+    | Region | **<inject key="Region" enableCopy="false" /> (4)** |
 
-1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
+      ![](../Media/l8e1-6.png)
 
-1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
+    | Setting | Value |
+    | --- | --- |
+    | Image | **Windows 10 Enterprise, version 22H2 (5)**  | 
+    | Size| Should be selected as **Standard_B2s**. If it appears empty, select **See all sizes**, choose the **Standard_DS1_v2 (6)** click **Select**. |
 
-1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+      ![](../Media/l8e1-7.png)
+
+    | Setting | Value |
+    | --- | --- |
+    | Username | Enter **azureuser(7)**  |
+    | Password  | Enter **Password.1!! (8)**  |
+    | Confirm Password  | Enter **Password.1!! (9)** |
+
+      ![](../Media/l8e1-8.png)
     
-1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says **Successfully onboarded machine to Microsoft Defender for Endpoint**.
+    | Setting | Value |
+    | --- | --- |
+    | Licensing | Select the Checkbox **(10)** |
 
-1. Press any key to continue. This will close the Command Prompt window.
+     ![](../Media/l8e1-9.png)
 
-1. Back in the Onboarding page from the Microsoft 365 Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
+1. Select **Create**. Wait for the Resource to be created, this may take a few minutes.
 
-1. In the Windows search bar of the WIN1 virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
+    ![](../Media/l8e1-10.png)
 
-1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
+    >**Note:** If there is a *Networking* validation failure, select that tab, review its contents, and then select **Review + create** again.
 
-1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. 
+## Task 3: Install Azure Arc on an On-Premises Server
 
-    >**Note:** The window closes automatically after running the script.
+In this task, you install Azure Arc on an on-premises server to make onboarding easier.
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
+>**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
 
-    >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
+>**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
 
-### Review
-In this lab, you have connected to Windows virtual machines, both within and outside of Azure, to Microsoft Sentinel using data connectors.
+1. Login to the **WIN-1** VM by using the RDP file which we have downloaded in the previous exercise.
 
-## Proceed to Exercise 3
+1. In the **WIN-1** virtual machine, search for **Hyper-V Manager** from task bar and select to open.
+
+    ![](../Media/l8e1-13.png)
+
+1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/> (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
+
+    ![](../Media/l8e1-12.png)
+ 
+1. Inside **WIN2** Click on **connect**.
+ 
+    ![](../Media/l8e1-14.png)
+
+1. Enter the **Password** as `Password.1!!` when prompted then hit on **Enter**.
+
+     ![](../Media/l8e3-16.png)
+
+1. Open the Microsoft Edge browser inside **WIN2**.
+
+1. In the **WIN2**, click on the Azure Portal icon as shown below:
+ 
+   ![Launch Azure Portal](../Media/sc900-image(1).png)
+
+1. In the **Sign in** dialog box, copy and paste **Email/Username: <inject key="AzureAdUserEmail"></inject>** and then select Next.
+
+1. In the **Enter password** dialog box, copy and paste **Password: <inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
+
+1. In the Search bar of the Azure portal, type **Azure arc (1)**, then select **Azure Arc (2)**.
+
+   ![](../Media/l8e1-15.png)
+
+1. In the navigation pane under **Azure Arc resources** select **Machines (1)**
+
+1. Select **+ Add/Create (2)**, then select **Add a machine (3)**.
+
+   ![](../Media/l8e1-16.png)
+
+1. Select **Generate script** from the "Add a single server" section.
+
+   ![](../Media/l8e1-17.png)
+
+1. In the **Add a server with Azure Arc** page, select the **RG-Defender (2)** Resource group under Project details.
+ 
+1. For *Region*, select **(US) East Us (3)** from the drop-down list.
+
+    ![](../Media/l8e118.png)
+
+1. Review the Server details and Connectivity method options. Keep the default values and select **Next** to get to the Tags tab.
+
+1. Review the default available tags. Select **Next** to get to the Download and run script tab.
+
+   ![](../Media/l8e119.png)
+
+1. Scroll down and select the **Download** button. **Hint:** if your browser blocks the download, take action in the browser to allow it.
+
+   ![](../Media/l8e120.png)
+
+1. In Microsoft Edge Browser, select the ellipsis button (...) if needed and then select **Keep**.
+
+   ![](../Media/l8e121.png)
+    
+1. Right-click the Windows Start **(1)** button and select **Windows PowerShell (Admin) (2)**.
+
+   ![](../Media/l8e1-11.png)
+
+1. Enter *Administrator* for "Username" and *Passw0rd!* for "Password" if you get a UAC prompt.
+
+1. Enter: cd C:\Users\Administrator\Downloads
+
+    ![](../Media/l8e122.png)
+
+    >**Important:** If you do not have this directory, most likely means that you are in the wrong machine. Go back to the beginning of Task 4 and change to WINServer and start over.
+
+1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
+
+1. Enter **A** for Yes to All and press enter.
+
+    ![](../Media/l8e123.png)
+
+1. Type *.\OnboardingScript.ps1* and press enter. 
+
+    ![](../Media/l8e124.png)
+
+    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 4 in the WINServer virtual machine. Other issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
+
+1. Enter **R** to Run once and press enter (this may take a couple minutes).
+
+    ![](../Media/l8e125.png)
+
+1. The setup process opens a new Microsoft Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
+
+    ![](../Media/l8e126.png)
+
+1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Machines** page.
+
+    ![](../Media/l8e127.png)
+
+1. Select **Refresh** until WINServer server name appears and the Status is *Connected*.
+  
+    ![](../Media/l8e128.png)
+
+    >**Note:** This could take a couple of minutes.
+
+## Task 4: Connect an Azure Windows virtual machine
+
+In this task, you'll connect an Azure Windows virtual machine to Microsoft Sentinel.
+
+1. In the Search bar of the Azure portal, type *micdoroft sentinel (1)*, then select **Microsoft Sentinel (2)**.
+
+   ![](../Media/l8e129.png)
+
+1. Select your Microsoft Sentinel Workspace you created earlier.
+
+   ![](../Media/l8e130.png)
+
+1. In the Microsoft Sentinel left menus, scroll down to the *Content management* section and select **Content Hub**.
+
+1. In the *Content hub*, search for the **Windows Security Events** solution and select it from the list.
+
+1. On the **Windows Security Events** solution page select **Install**.
+
+    ![](../Media/l8e3-17.png)
+
+1. When the installation completes select **Manage**.
+
+    ![](../Media/l8e3-15.png)
+
+    >**Note:** The *Windows Security Events* solution installs both the *Windows Security Events via AMA* and the *Security Events via Legacy Agent* Data connectors, along with 2 Workbooks, 20 Analytic Rules, and 43 Hunting Queries.
+
+1. Select the **Windows Security Events via AMA (1)** Data connector, and select **Open connector page (2)** on the connector information blade.
+
+   ![](../Media/l8e3-14.png)
+    
+1. In the *Configuration* section, under the *Instructions* tab, select the **Create data collection rule**.
+
+1. Enter **AZWINDCR** for Rule Name, then select **Next: Resources**.
+
+1. Select **+Add resource(s)** to select the Virtual Machine we created.
+
+1. Expand **RG-AZWIN01**, then select **AZWIN01**.
+
+    ![](../Media/l8e3-13.png)
+
+1. Select **Apply** and then select **Next: Collect**.
+
+1. Review the different Security Event collection option. Keep *All Security Events* and then select **Next: Review + create**.
+
+1. Select **Create** to save the Data Collection Rule.
+
+1. Wait a minute and then select **Refresh** to see the new data collection rule listed.
+
+## Task 5: Connect a non-Azure Windows Machine
+
+In this task, you'll add an Azure Arc connected, non-Azure Windows virtual machine to Microsoft Sentinel.  
+
+   >**Note:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices.
+
+1. Make sure you are in the **Windows Security Events via AMA** data connector configuration in your Microsoft Sentinel workspace.
+
+1. In the **Instructions** tab, under the *Configuration* section, edit the **AZWINDCR** *data collection rule* by selecting the *pencil* icon.
+
+   ![](../Media/l8e3-12.png)
+    
+1. Select **Next: Resources**, and expand your *Subscription* under *Scope* on the *Resources* tab.
+
+1. Expand **RG-Defender** (or the Resource Group your created), then select **WIN-xxxxxxxxxx**.
+
+    ![](../Media/l8e3-11.png)
+
+    >**Important:** If you do not see it, please refer to [Learning Path 8, Exercise 2, Task 2](w), where you installed **Azure Arc** on this server.
+
+1. On the **Edit Data Collection Rule** page, select **Next: Collect**, then **Next: Review + create**.
+
+   ![](../Media/l8e3-10.png)
+
+1. Once the **Vlidation Passed**, click on **Create**.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+ <validation step="cb8a9849-e7b9-487e-8717-e483d77a590a" />
+
+## Review
+In this lab, you have completed the following:
+
+- Created a Windows Virtual Machine in Azure
+- Installed Azure Arc on an On-Premises Server
+- Connected an Azure Windows virtual machine
+- Connected a non-Azure Windows Machine
+
+### You have successfully completed the lab!
