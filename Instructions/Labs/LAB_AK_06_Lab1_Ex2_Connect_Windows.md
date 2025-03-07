@@ -61,9 +61,9 @@ In this task, you'll create a Windows virtual machine in Azure.
 
    ![](../Media/l8e1-4.png)
 
-1. Select **Dev/Test** and then select **Continue to create a VM**.
+    > **Note:** Select **Dev/Test** and then select **Continue to create a VM** if prompted.
 
-   ![](../Media/l8e1-5.png)
+      ![](../Media/l8e1-5.png)
 
 1. On **Create a virtual machine** page, configure the disk and then select **Review + create (11)**. 
 
