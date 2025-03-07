@@ -19,7 +19,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Architecture Diagram
 
-![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
+  ![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
 
 ## Task 1: Create a Microsoft Sentinel Workspace
 
@@ -179,23 +179,27 @@ In this task, you install Azure Arc on an on-premises server to make onboarding 
 
 1. Enter *Administrator* for "Username" and *Passw0rd!* for "Password" if you get a UAC prompt.
 
-1. Enter: cd C:\Users\Administrator\Downloads
+1. Run the below command to navigate to Downloads:
 
-    ![](../Media/l8e122.png)
+    ```
+    cd C:\Users\Administrator\Downloads
+    ```
 
-    >**Important:** If you do not have this directory, most likely means that you are in the wrong machine. Go back to the beginning of Task 4 and change to WINServer and start over.
-
-1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
+1. Run the below command:
+   
+   ```
+   Set-ExecutionPolicy -ExecutionPolicy Unrestricted*
+   ```
 
 1. Enter **A** for Yes to All and press enter.
 
     ![](../Media/l8e123.png)
 
-1. Type *.\OnboardingScript.ps1* and press enter. 
+1. Run the below command to run the file:
 
-    ![](../Media/l8e124.png)
-
-    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 4 in the WINServer virtual machine. Other issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
+    ```
+    .\OnboardingScript.ps1
+    ```
 
 1. Enter **R** to Run once and press enter (this may take a couple minutes).
 
@@ -281,18 +285,16 @@ In this task, you'll add an Azure Arc connected, non-Azure Windows virtual machi
 
     ![](../Media/l8e3-11.png)
 
-    >**Important:** If you do not see it, please refer to [Learning Path 8, Exercise 2, Task 2](w), where you installed **Azure Arc** on this server.
-
 1. On the **Edit Data Collection Rule** page, select **Next: Collect**, then **Next: Review + create**.
 
    ![](../Media/l8e3-10.png)
 
-1. Once the **Vlidation Passed**, click on **Create**.
+1. Once the validation has passed, click on **Create**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
  <validation step="cb8a9849-e7b9-487e-8717-e483d77a590a" />
 
