@@ -80,7 +80,7 @@ In this task, you'll load sample security alerts and review the alert details.
 
     - Review and read the *Alert details* tab.
 
-    - Select the **Take action** tab or scroll down and select the **Next: Take Action** button at the end of the page.
+    - Select the **Take action** tab next to Alert details.
 
     - Review the *Take action* information. Notice the sections available to take action depending on the type of alert: Inspect resource context, Mitigate the threat, Prevent future attacks, Trigger automated response and Suppress similar alerts.
 
