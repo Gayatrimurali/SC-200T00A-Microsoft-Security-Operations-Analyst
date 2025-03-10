@@ -37,6 +37,8 @@ In this task, you will connect the Microsoft Entra ID connector to Microsoft Sen
 
     ![Picture 1](../Media/L4T1S3-0502.png)
 
+  > **Note:** In the Microsoft Sentinel free trial activated pop-up, click on **OK**.
+
 ## Task 2: Create a Windows Virtual Machine in Azure
 
   > **Note:** Perform this task in **SmartHotelHost** VM (Jump VM) 
@@ -111,13 +113,13 @@ In this task, you install Azure Arc on an on-premises server to make onboarding 
 
 >**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
 
-1. Login to the **WIN-1** VM by using the RDP file which we have downloaded in the previous exercise.
+1. Login to the **WIN1** VM by using the RDP file which we have downloaded in the previous exercise.
 
-1. In the **WIN-1** virtual machine, search for **Hyper-V Manager** from task bar and select to open.
+1. In the **WIN1** virtual machine, search for **Hyper-V Manager** from task bar and select to open.
 
     ![](../Media/l8e1-13.png)
 
-1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/> (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
+1. Select **LABVM (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
 
     ![](../Media/l8e1-12.png)
  
@@ -188,7 +190,7 @@ In this task, you install Azure Arc on an on-premises server to make onboarding 
 1. Run the below command:
    
    ```
-   Set-ExecutionPolicy -ExecutionPolicy Unrestricted*
+   Set-ExecutionPolicy -ExecutionPolicy Unrestricted
    ```
 
 1. Enter **A** for Yes to All and press enter.
@@ -253,13 +255,11 @@ In this task, you'll connect an Azure Windows virtual machine to Microsoft Senti
 
 1. Enter **AZWINDCR** for Rule Name, then select **Next: Resources**.
 
-1. Select **+Add resource(s)** to select the Virtual Machine we created.
-
 1. Expand **RG-AZWIN01**, then select **AZWIN01**.
 
     ![](../Media/l8e3-13.png)
 
-1. Select **Apply** and then select **Next: Collect**.
+1. Select **Next: Collect**.
 
 1. Review the different Security Event collection option. Keep *All Security Events* and then select **Next: Review + create**.
 

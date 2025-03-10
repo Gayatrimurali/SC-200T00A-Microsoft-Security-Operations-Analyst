@@ -77,15 +77,15 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. In the Search bar of the Azure portal, search for **Virtual Machines** and select it.
 
-1. Select the **WIN1-<inject key="DeploymentID" enableCopy="false" />** VM.
+1. Select the **WIN1** VM.
 
 1. Click on **Connect** from the Connect dropdown.
 
-      ![Picture 1](../Media/secure13.png)
+      ![Picture 1](../Media/win-1-1003.png)
 
-1. Click on **Download RDP file** and select **Keep** in the pop-up.
+1. Click on **Download RDP file** and select **Keep** in the pop-up. Open file when the download completes.
 
-      ![Picture 1](../Media/secure14.png)
+      ![Picture 1](../Media/win-1-rdp-1003.png)
 
 1. Click on **Connect**.
 
@@ -103,9 +103,9 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
       ![Picture 1](../Media/secure18.png)
 
-1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
+1. Click on the Start button, search for **Hyper-V** from the bottom Windows search bar, and select to open.
 
-1. Click on **WIN1-<inject key="DeploymentID" enableCopy="false" />**.
+1. Click on **LABVM**.
 
 1. Select and right-click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
@@ -113,7 +113,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Enter the **Password** as `Password.1!!` when prompted.
 
-     > **Note:** To enable the clipboard Right-click on WIN1-xxxx and select Hyper-V Settings click on **enhanced session mode** and check the **use enhanced mode** click on apply Then restart your virtual machine, once vm starts you will get a configuration pop-up click on show more options and select local resources and make sure the clipboard is selected
+     > **Note:** To enable the clipboard Right-click on LABVM and select Hyper-V Settings click on **Enhanced session mode policy** and check the **Allow enhanced mode** click on apply Then restart your virtual machine, once vm starts you will get a configuration pop-up click on show more options and select local resources and make sure the clipboard is selected
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at `https://portal.azure.com`.
 
